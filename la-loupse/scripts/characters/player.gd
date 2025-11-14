@@ -7,8 +7,8 @@ const SPEED = 300.0
 var last_facing_right := true  # remembers which direction we faced last
 
 func _physics_process(delta: float) -> void:
-	var x_input := Input.get_axis("ui_left", "ui_right")
-	var y_input := Input.get_axis("ui_up", "ui_down")
+	var x_input := Input.get_axis("move_left", "move_right")
+	var y_input := Input.get_axis("move_up", "move_down")
 
 	# Movement
 	velocity.x = x_input * SPEED
