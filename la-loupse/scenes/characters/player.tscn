@@ -1,7 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://c4hb2aiwurdpi"]
+[gd_scene load_steps=14 format=3 uid="uid://c4hb2aiwurdpi"]
 
 [ext_resource type="Texture2D" uid="uid://ca5tsmhejjxan" path="res://assests/characters/player.png" id="1_7oce8"]
 [ext_resource type="Script" uid="uid://b1dpgk4jspk2c" path="res://scripts/characters/player.gd" id="1_yewv4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yewv4"]
+atlas = ExtResource("1_7oce8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_76oj4"]
+atlas = ExtResource("1_7oce8")
+region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7oce8"]
 atlas = ExtResource("1_7oce8")
@@ -39,6 +47,17 @@ region = Rect2(224, 32, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_yewv4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_76oj4")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 2.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_7oce8")
 }, {
 "duration": 1.0,
@@ -73,7 +92,6 @@ script = ExtResource("1_yewv4")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_a55ao")
-animation = &"walking"
-frame_progress = 0.2898903
+animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
