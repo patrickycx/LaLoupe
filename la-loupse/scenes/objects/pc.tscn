@@ -1,11 +1,27 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=3 format=3 uid="uid://cac3lfhux50of"]
 
 [ext_resource type="Texture2D" uid="uid://ca5tsmhejjxan" path="res://assests/characters/player.png" id="1_0p8th"]
+=======
+[gd_scene load_steps=6 format=3 uid="uid://cac3lfhux50of"]
+
+[ext_resource type="Texture2D" uid="uid://m0pq3po7udd1" path="res://assests/objects/Screenshot 2025-11-14 223030.png" id="1_0p8th"]
+[ext_resource type="Script" uid="uid://csgfmytcwo614" path="res://scripts/objects/pc.gd" id="1_8s8mw"]
+[ext_resource type="PackedScene" uid="uid://bo8xsuy8v7uh4" path="res://components/interaction_component/interactable.tscn" id="3_jpa83"]
+>>>>>>> Stashed changes
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0p8th"]
 size = Vector2(53, 41)
 
+<<<<<<< Updated upstream
 [node name="PC" type="Node2D"]
+=======
+[sub_resource type="CircleShape2D" id="CircleShape2D_8aqic"]
+radius = 39.0
+
+[node name="pc" type="StaticBody2D"]
+script = ExtResource("1_8s8mw")
+>>>>>>> Stashed changes
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = 5
@@ -18,3 +34,10 @@ region_rect = Rect2(196.27277, 242.6602, 23.764084, 13.401382)
 z_index = 5
 position = Vector2(3, 5)
 shape = SubResource("RectangleShape2D_0p8th")
+
+[node name="Interactable" parent="." instance=ExtResource("3_jpa83")]
+interact_name = "use [E]"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(-1, 21)
+shape = SubResource("CircleShape2D_8aqic")

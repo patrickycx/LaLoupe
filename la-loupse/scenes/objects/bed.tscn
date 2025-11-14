@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://cleoyki7orac0"]
+
+[ext_resource type="Script" uid="uid://b1ycjh8w583ga" path="res://scripts/objects/bed.gd" id="1_g5a0r"]
+[ext_resource type="Texture2D" uid="uid://m0pq3po7udd1" path="res://assests/objects/Screenshot 2025-11-14 223030.png" id="1_us1fn"]
+[ext_resource type="PackedScene" uid="uid://bo8xsuy8v7uh4" path="res://components/interaction_component/interactable.tscn" id="2_jx3i1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g5a0r"]
+radius = 39.0
+
+[node name="bed" type="StaticBody2D"]
+script = ExtResource("1_g5a0r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_us1fn")
+region_enabled = true
+region_rect = Rect2(485.4819, 291.69653, 43.015167, 77.427246)
+
+[node name="Interactable" parent="." instance=ExtResource("2_jx3i1")]
+interact_name = "sleep [E]"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+shape = SubResource("CircleShape2D_g5a0r")

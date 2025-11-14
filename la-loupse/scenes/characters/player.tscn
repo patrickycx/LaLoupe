@@ -1,8 +1,13 @@
+<<<<<<< Updated upstream
 
 [gd_scene load_steps=14 format=3 uid="uid://c4hb2aiwurdpi"]
+=======
+[gd_scene load_steps=16 format=3 uid="uid://c4hb2aiwurdpi"]
+>>>>>>> Stashed changes
 
 [ext_resource type="Texture2D" uid="uid://ca5tsmhejjxan" path="res://assests/characters/player.png" id="1_7oce8"]
 [ext_resource type="Script" uid="uid://b1dpgk4jspk2c" path="res://scripts/characters/player.gd" id="1_yewv4"]
+[ext_resource type="PackedScene" uid="uid://ixubhjmyq60r" path="res://components/interaction_component/interacting_component.tscn" id="3_76oj4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yewv4"]
 atlas = ExtResource("1_7oce8")
@@ -88,7 +93,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_yewv4"]
-radius = 26.076809
+radius = 19.0
 
 [node name="player" type="CharacterBody2D"]
 z_index = 5
@@ -96,6 +101,7 @@ script = ExtResource("1_yewv4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = 5
+position = Vector2(5, -20)
 scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_a55ao")
 animation = &"idle"
@@ -103,5 +109,7 @@ animation = &"idle"
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-6, 14.000001)
+position = Vector2(-1, 10)
 shape = SubResource("CircleShape2D_yewv4")
+
+[node name="InteractingComponent" parent="." instance=ExtResource("3_76oj4")]

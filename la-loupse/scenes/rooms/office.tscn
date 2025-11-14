@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://c816xdhwnlrmm"]
+[gd_scene load_steps=7 format=3 uid="uid://c816xdhwnlrmm"]
 
 [ext_resource type="Texture2D" uid="uid://bgjs5fyli0hvp" path="res://assests/rooms/tiles.png" id="1_o8fl2"]
 [ext_resource type="PackedScene" uid="uid://c4hb2aiwurdpi" path="res://scenes/characters/player.tscn" id="2_cgde3"]
+[ext_resource type="PackedScene" path="res://scenes/objects/bed.tscn" id="3_ly0v5"]
+[ext_resource type="PackedScene" uid="uid://cac3lfhux50of" path="res://scenes/objects/pc.tscn" id="4_vo3j2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ly0v5"]
 texture = ExtResource("1_o8fl2")
@@ -2570,6 +2572,7 @@ texture = ExtResource("1_o8fl2")
 sources/2 = SubResource("TileSetAtlasSource_ly0v5")
 
 [node name="Office" type="Node2D"]
+position = Vector2(0, -1)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_vo3j2")
@@ -2579,3 +2582,9 @@ layer_0/tile_data = PackedInt32Array(-327687, 2686978, 14, -262151, 2686978, 14,
 [node name="player" parent="." instance=ExtResource("2_cgde3")]
 z_index = 0
 position = Vector2(23, -16)
+
+[node name="bed" parent="." instance=ExtResource("3_ly0v5")]
+position = Vector2(169, 59)
+
+[node name="pc" parent="." instance=ExtResource("4_vo3j2")]
+position = Vector2(-83, 57)
