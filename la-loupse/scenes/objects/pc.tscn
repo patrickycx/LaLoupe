@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://cac3lfhux50of"]
+
+[ext_resource type="Texture2D" uid="uid://ca5tsmhejjxan" path="res://assests/characters/player.png" id="1_0p8th"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0p8th"]
+size = Vector2(53, 41)
+
+[node name="PC" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 5
+scale = Vector2(4, 4)
+texture = ExtResource("1_0p8th")
+region_enabled = true
+region_rect = Rect2(196.27277, 242.6602, 23.764084, 13.401382)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+z_index = 5
+position = Vector2(3, 5)
+shape = SubResource("RectangleShape2D_0p8th")
