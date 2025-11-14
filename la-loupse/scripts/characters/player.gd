@@ -3,31 +3,37 @@ extends CharacterBody2D
 @onready var anim = $AnimatedSprite2D
 
 const SPEED = 300.0
-const JUMP_VELOCITY = -400.0
 
+var last_facing_right := true  # remembers which direction we faced last
 
 func _physics_process(delta: float) -> void:
+	var x_input := Input.get_axis("ui_left", "ui_right")
+	var y_input := Input.get_axis("ui_up", "ui_down")
 
-	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
+	# Movement
+	velocity.x = x_input * SPEED
+	velocity.y = y_input * SPEED
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction := Input.get_axis("ui_left", "ui_right")
-	var y_direction := Input.get_axis("ui_up", "ui_down")
-	if direction:
-		velocity.x = direction * SPEED
+	# --- Animation Logic ---
+	if x_input != 0 or y_input != 0:
+		# walking
 		anim.play("walking")
-		# print("walk")
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		
-		
-	if y_direction:
-		velocity.y = y_direction * SPEED
-	else:
-		velocity.y = move_toward(velocity.y, 0, SPEED)
 
+		# Facing direction
+		if x_input > 0:
+			anim.flip_h = false
+			last_facing_right = true
+		elif x_input < 0:
+			anim.flip_h = true
+			last_facing_right = false
+		else:
+			# Moving only up/down → keep last horizontal direction
+			anim.flip_h = not last_facing_right
+	else:
+		# idle
+		anim.play("idle")
+
+		# face last direction while idle
+		anim.flip_h = not last_facing_right
 
 	move_and_slide()
