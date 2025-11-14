@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfrpfdc68a0py"]
+
+[ext_resource type="Script" uid="uid://c2o7oky6mxts2" path="res://scripts/objects/textbox.gd" id="1_jcgpn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mny84"]
+bg_color = Color(0, 0, 0, 0.2901961)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.0015082388, 0.00025598455, 0.010685158, 1)
+
+[node name="Textbox" type="CanvasLayer"]
+script = ExtResource("1_jcgpn")
+
+[node name="TextboxContainer" type="MarginContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -241.5
+offset_top = -81.0
+offset_right = 241.5
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Panel" type="Panel" parent="TextboxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_mny84")
+
+[node name="MarginContainer2" type="MarginContainer" parent="TextboxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="Panel2" type="Panel" parent="TextboxContainer/MarginContainer2"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextboxContainer/MarginContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TextboxContainer/MarginContainer2"]
+layout_mode = 2
+text = "Hallo Patrick"
