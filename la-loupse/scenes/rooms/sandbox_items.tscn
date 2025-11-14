@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://c2rnefpt5tmdn"]
+[gd_scene load_steps=7 format=3 uid="uid://c2rnefpt5tmdn"]
 
 [ext_resource type="Texture2D" uid="uid://bgjs5fyli0hvp" path="res://assests/rooms/tiles.png" id="1_ysiyx"]
 [ext_resource type="PackedScene" uid="uid://c4hb2aiwurdpi" path="res://scenes/characters/player.tscn" id="2_1j04t"]
-[ext_resource type="PackedScene" uid="uid://cac3lfhux50of" path="res://scenes/objects/pc.tscn" id="3_afhtq"]
+[ext_resource type="PackedScene" uid="uid://dq2w313iydx2n" path="res://scenes/objects/pc.tscn" id="3_afhtq"]
+[ext_resource type="PackedScene" uid="uid://cleoyki7orac0" path="res://scenes/objects/bed.tscn" id="4_afhtq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_glqmd"]
 texture = ExtResource("1_ysiyx")
@@ -2580,5 +2581,21 @@ layer_0/tile_data = PackedInt32Array(-851988, 2555904, 17, -786452, 2555904, 17,
 [node name="player" parent="." instance=ExtResource("2_1j04t")]
 position = Vector2(7, -25)
 
-[node name="PC" parent="." instance=ExtResource("3_afhtq")]
+[node name="PC" parent="."]
+_import_path = NodePath("")
+unique_name_in_owner = false
+process_mode = 0
+process_priority = 0
+process_physics_priority = 0
+process_thread_group = 0
+physics_interpolation_mode = 0
+auto_translate_mode = 0
+editor_description = ""
 position = Vector2(250, -14)
+script = null
+
+[node name="StaticBody2D" parent="." instance=ExtResource("4_afhtq")]
+position = Vector2(-160, 144)
+
+[node name="pc" parent="." instance=ExtResource("3_afhtq")]
+position = Vector2(161, -73)
