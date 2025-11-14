@@ -13,4 +13,4 @@ func _ready() -> void:
 # What will happen after pressing E
 func _on_interact():
 	# TODO
-	print("Success: I use computer.")
+	print("Success: I...")
