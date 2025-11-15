@@ -39,18 +39,17 @@ func _process(delta):
 			NEW_DIR:
 				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
 			MOVE: 
-				move(delta)
+				pass
+				#move(delta)
 	# Interaction
 	if player_in_chat_zone:
 		if Input.is_action_just_pressed("interaction"):
 			if Global.chatted_to_techBaron == 0:
 				Global.chatted_to_techBaron += 1
-				print("chatting with npc")
 				$Dialogue.start("techBaron")
-				is_roaming = false
-				is_chatting = true
 				$AnimatedSprite2D.play("idle")
 				Global.player_can_move = false
+			
 
 func choose(array):
 	array.shuffle()
