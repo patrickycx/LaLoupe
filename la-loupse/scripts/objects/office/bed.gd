@@ -18,6 +18,7 @@ func time_to_sleep(day, finished):
 func _on_interact():
 	if not(time_to_sleep(Global.day, Global.finished)):
 		print("Success: It's not time to sleep.")
+		Textbox.loadText("dontSleep")
 	else:
 		Global.day += 1
 		print("Success: I sleep.")

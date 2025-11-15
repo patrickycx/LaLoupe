@@ -11,21 +11,22 @@ func _physics_process(_delta: float) -> void:
 	var y_input := Input.get_axis("move_up", "move_down")
 
 	# Movement
-	velocity.x = x_input * SPEED
-	velocity.y = y_input * SPEED
+	if not Textbox.textDisplayed:
+		velocity.x = x_input * SPEED
+		velocity.y = y_input * SPEED
 
 	# --- Animation Logic ---
-	if x_input != 0 or y_input != 0:
+	if (x_input != 0 or y_input != 0) and not Textbox.textDisplayed:
 		# walking
 		anim.play("walking")
 
 		# Facing direction
 		if x_input > 0:
 			anim.flip_h = true
-			last_facing_right = true
+			last_facing_right = false
 		elif x_input < 0:
 			anim.flip_h = false
-			last_facing_right = false
+			last_facing_right = true
 		else:
 			# Moving only up/down → keep last horizontal direction
 			anim.flip_h = not last_facing_right
