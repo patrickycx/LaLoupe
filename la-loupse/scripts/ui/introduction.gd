@@ -1,13 +1,8 @@
 extends Control
 
-
-func _on_continue_pressed() -> void:
+func _ready() -> void:
+	await get_tree().create_timer(2).timeout
 	Global.destination = "res://scenes/rooms/office.tscn"
 	Global.chapterNum = 1
 	Global.chapterName = "Notre-Dame"
 	get_tree().change_scene_to_file("res://scenes/ui/coverChapter.tscn")
-
-
-func _on_return_pressed() -> void:
-	print("Return to main menu")
-	get_tree().change_scene_to_file("res://scenes/ui/Main_menu.tscn")
