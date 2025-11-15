@@ -87,8 +87,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_yewv4"]
-radius = 20.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_76oj4"]
+size = Vector2(39, 16)
 
 [node name="player" type="CharacterBody2D"]
 z_index = 5
@@ -102,9 +102,10 @@ sprite_frames = SubResource("SpriteFrames_a55ao")
 animation = &"idle"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 9)
-shape = SubResource("CircleShape2D_yewv4")
+zoom = Vector2(1.5, 1.5)
 
 [node name="InteractingComponent" parent="." instance=ExtResource("3_76oj4")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 19)
+shape = SubResource("RectangleShape2D_76oj4")
