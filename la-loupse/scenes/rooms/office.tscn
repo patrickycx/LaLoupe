@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dre3fkvltpryc" path="res://assests/rooms/office.png" id="1_oh624"]
 [ext_resource type="PackedScene" uid="uid://beqha1apdm5l8" path="res://scenes/characters/player.tscn" id="2_cgde3"]
 [ext_resource type="PackedScene" uid="uid://cleoyki7orac0" path="res://scenes/objects/office/bed.tscn" id="3_ly0v5"]
-[ext_resource type="Script" uid="uid://6i0p4igwegpt" path="res://scripts/day_label.gd" id="3_oh624"]
+[ext_resource type="Script" uid="uid://6i0p4igwegpt" path="res://scripts/ui/day_label.gd" id="3_oh624"]
 [ext_resource type="PackedScene" uid="uid://3kx8ulhkdscq" path="res://scenes/objects/office/pc.tscn" id="4_vo3j2"]
 [ext_resource type="PackedScene" uid="uid://bh5jigrmx67x0" path="res://scenes/objects/office/door.tscn" id="5_vo3j2"]
 [ext_resource type="PackedScene" uid="uid://bapj4md3j0uqu" path="res://scenes/objects/office/letter.tscn" id="6_gcaur"]
@@ -102,11 +102,14 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 script = ExtResource("3_oh624")
 
-[node name="Label" type="Label" parent="player"]
-offset_left = 102.0
-offset_top = -272.0
-offset_right = 209.0
-offset_bottom = -249.0
+[node name="secretsFound_label" type="Label" parent="player"]
+layout_direction = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -107.0
+offset_bottom = 23.0
+grow_horizontal = 0
 text = "Secrets found"
 
 [node name="cat" parent="." instance=ExtResource("8_hplsr")]

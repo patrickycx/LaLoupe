@@ -12,5 +12,20 @@ func _ready() -> void:
 
 # What will happen after pressing E
 func _on_interact():
-	print("Success: I use computer.")
-	get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
+	
+	if (Global.day == 1):
+		if (Global.notreDame_done == true):
+			print("Was in notre dame")
+		else:
+			get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
+	if Global.day == 2:
+		if (Global.louvre_done == true):
+			pass
+		else:
+			pass
+	if Global.day == 3:
+		if (Global.catacombes_done == true):
+			pass
+		else:
+			pass
+
