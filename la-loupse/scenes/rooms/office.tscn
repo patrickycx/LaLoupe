@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://c816xdhwnlrmm"]
+[gd_scene load_steps=9 format=3 uid="uid://c816xdhwnlrmm"]
 
 [ext_resource type="Texture2D" uid="uid://bgjs5fyli0hvp" path="res://assests/rooms/tiles.png" id="1_o8fl2"]
 [ext_resource type="PackedScene" uid="uid://beqha1apdm5l8" path="res://scenes/characters/player.tscn" id="2_cgde3"]
 [ext_resource type="PackedScene" uid="uid://cleoyki7orac0" path="res://scenes/objects/bed.tscn" id="3_ly0v5"]
 [ext_resource type="PackedScene" uid="uid://3kx8ulhkdscq" path="res://scenes/objects/pc.tscn" id="4_vo3j2"]
+[ext_resource type="PackedScene" uid="uid://bh5jigrmx67x0" path="res://scenes/objects/door.tscn" id="5_vo3j2"]
+[ext_resource type="PackedScene" uid="uid://bapj4md3j0uqu" path="res://scenes/objects/letter.tscn" id="6_gcaur"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ly0v5"]
 texture = ExtResource("1_o8fl2")
@@ -2587,3 +2589,9 @@ position = Vector2(170, 33)
 
 [node name="pc" parent="." instance=ExtResource("4_vo3j2")]
 position = Vector2(-90, 35)
+
+[node name="door" parent="." instance=ExtResource("5_vo3j2")]
+position = Vector2(55, -186)
+
+[node name="letter" parent="." instance=ExtResource("6_gcaur")]
+position = Vector2(44, -133)

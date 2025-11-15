@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bo8xsuy8v7uh4" path="res://components/interaction_component/interactable.tscn" id="3_jpa83"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0p8th"]
-size = Vector2(46, 87)
+size = Vector2(41, 79)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ckafw"]
 radius = 36.013885
@@ -19,7 +19,7 @@ region_enabled = true
 region_rect = Rect2(346.28076, 29.909088, 48.368134, 88.11635)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 0.5)
+position = Vector2(0.5, -0.5)
 shape = SubResource("RectangleShape2D_0p8th")
 
 [node name="Interactable" parent="." instance=ExtResource("3_jpa83")]
