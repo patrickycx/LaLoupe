@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 const speed = 100.0
 var current_state = 0
-var chatted = 0
 
 var dir = Vector2.RIGHT
 var start_pos
@@ -24,7 +23,6 @@ func _ready():
 	start_pos = position
 	$Timer.start()
 
-
 func _process(delta):
 	# Animation logic
 	if current_state == IDLE or current_state == NEW_DIR:
@@ -44,11 +42,14 @@ func _process(delta):
 	# Interaction
 	if player_in_chat_zone:
 		if Input.is_action_just_pressed("interaction"):
-			print("chatting with npc")
-			$Dialogue.start()
-			is_roaming = false
-			is_chatting = true
-			$AnimatedSprite2D.play("idle")
+			if Global.chatted_to_priest == 0:
+				Global.chatted_to_priest += 1
+				$Dialogue.start("priest")
+				print(Global.chatted_to_priest)
+				is_roaming = false
+				is_chatting = true
+				$AnimatedSprite2D.play("idle")
+				Global.player_can_move = false
 
 
 func choose(array):
@@ -68,16 +69,18 @@ func _on_chat_detection_area_body_entered(body: Node2D) -> void:
 
 
 func _on_chat_detection_area_body_exited(body: Node2D) -> void:
-	if body.name == "player":      
+	if body.name == "player": 
 		player_in_chat_zone = false
 
 
 func _on_timer_timeout():
 	$Timer.wait_time = choose([0.5, 1, 1.5])
-	$Timer.start()   
+	$Timer.start()   # <-- MUST RESTART
 	current_state = choose([IDLE, NEW_DIR, MOVE])
-	
+
 
 func _on_dialogue_d_finished() -> void:
+	print("finished")
 	is_chatting = false
 	is_roaming = true
+	Global.player_can_move = true

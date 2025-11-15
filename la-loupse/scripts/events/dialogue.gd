@@ -11,12 +11,13 @@ var d_active = false
 func _ready():
 	$NinePatchRect.visible = false
 	
-func start():
+func start(char_key):
 	if d_active:
 		return
 	d_active = true
 	$NinePatchRect.visible = true
-	dialogue = load_dialogue()
+	var all_dialogues = load_dialogue()
+	dialogue = all_dialogues[char_key]
 	current_dialogue_id = -1
 	next_script()
 	
@@ -33,11 +34,10 @@ func _input(event):
 	
 func next_script():
 	current_dialogue_id += 1
-	print(current_dialogue_id)
 	if current_dialogue_id >= len(dialogue):
 		d_active = false
 		$NinePatchRect.visible = false
-		emit_signal("dialogue finished")
+		emit_signal("d_finished")
 		return
 
 

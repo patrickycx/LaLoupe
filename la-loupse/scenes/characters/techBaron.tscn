@@ -1,7 +1,7 @@
 [gd_scene load_steps=18 format=3 uid="uid://4jk1kmmpvhkb"]
 
 [ext_resource type="Texture2D" uid="uid://ca5tsmhejjxan" path="res://assests/characters/player.png" id="1_oh642"]
-[ext_resource type="Script" uid="uid://dwaacrvrkllys" path="res://scripts/characters/npc_1.gd" id="1_yxk8k"]
+[ext_resource type="Script" uid="uid://dwaacrvrkllys" path="res://scripts/characters/techBaron.gd" id="1_yxk8k"]
 [ext_resource type="PackedScene" uid="uid://c2iv5d0i0nmuv" path="res://scenes/events/dialogue.tscn" id="3_rga5l"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yxk8k"]
@@ -95,36 +95,37 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uhgm8"]
-radius = 18.0
+radius = 41.01219
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_20idt"]
-radius = 47.0
+radius = 128.01563
 
-[node name="NPC1" type="CharacterBody2D"]
+[node name="techBaron" type="CharacterBody2D"]
 script = ExtResource("1_yxk8k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(3, 3)
+z_index = 1
+scale = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_v3848")
 animation = &"move"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5, 19)
+position = Vector2(-8, 38)
 shape = SubResource("CircleShape2D_uhgm8")
 
 [node name="chatDetectionArea" type="Area2D" parent="."]
 
 [node name="textCollision" type="CollisionShape2D" parent="chatDetectionArea"]
-position = Vector2(-3, 7)
+position = Vector2(-3, 17)
 shape = SubResource("CircleShape2D_20idt")
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Dialogue" parent="." instance=ExtResource("3_rga5l")]
-offset_left = -5.0
-offset_top = -165.0
-offset_right = 35.0
-offset_bottom = -125.0
+offset_left = 120.0
+offset_top = -297.0
+offset_right = 157.0
+offset_bottom = -259.0
 
 [connection signal="body_entered" from="chatDetectionArea" to="." method="_on_chat_detection_area_body_entered"]
 [connection signal="body_exited" from="chatDetectionArea" to="." method="_on_chat_detection_area_body_exited"]
