@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://3kx8ulhkdscq" path="res://scenes/objects/office/pc.tscn" id="3_afhtq"]
 [ext_resource type="PackedScene" uid="uid://cleoyki7orac0" path="res://scenes/objects/office/bed.tscn" id="4_afhtq"]
 [ext_resource type="PackedScene" uid="uid://bfrpfdc68a0py" path="res://scenes/events/textbox.tscn" id="5_m7xjs"]
-[ext_resource type="PackedScene" uid="uid://4jk1kmmpvhkb" path="res://scenes/characters/npc_1.tscn" id="6_cjv3p"]
-[ext_resource type="PackedScene" uid="uid://c47aag05pmo8p" path="res://scenes/characters/npc_2.tscn" id="7_3rjj0"]
+[ext_resource type="PackedScene" uid="uid://4jk1kmmpvhkb" path="res://scenes/characters/techBaron.tscn" id="6_cjv3p"]
+[ext_resource type="PackedScene" uid="uid://c47aag05pmo8p" path="res://scenes/characters/priest.tscn" id="7_3rjj0"]
 [ext_resource type="PackedScene" uid="uid://bvgkyjlyijg1o" path="res://scenes/characters/cat.tscn" id="8_jausl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_glqmd"]
