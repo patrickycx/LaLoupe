@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="LaLoupse"
-run/main_scene="uid://c816xdhwnlrmm"
+run/main_scene="uid://c600nu8dh6gi0"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
