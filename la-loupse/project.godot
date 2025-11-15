@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Global="*res://scripts/global.gd"
 TransitionScreen="*res://scripts/component/transition_screen.tscn"
+Textbox="*res://scenes/events/textbox.tscn"
 
 [input]
 

@@ -8,13 +8,17 @@ extends StaticBody2D
 
 # Detect the interaction (if E is pressed)
 func _ready() -> void:
-	if Global.day != 3:
+	if receiveNews(Global.day, Global.finished):
+		interactable.interact = _on_interact
+		position = Vector2(430, -250)
+	else:
 		interactable.hide()
 		sprite_2d.hide()
 		position = Vector2(1400, -335)
-	else:
-		interactable.interact = _on_interact
-		position = Vector2(430, -250)
+
+func receiveNews(day, finished):
+	return not (day == 1 and "notreDameScene" in finished) or (day == 2 and "louvreScene" in finished) or (day == 3 and "catacombsScene"  in finished) or "readNews" in finished or "readNote" in finished or "readInvitation" in finished
+	
 
 # What will happen after pressing E
 func _on_interact():
