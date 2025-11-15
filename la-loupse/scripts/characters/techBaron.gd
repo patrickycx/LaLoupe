@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 const speed = 100.0
 var current_state = 0
-var chatted = 0
 
 var dir = Vector2.RIGHT
 var start_pos
@@ -44,12 +43,14 @@ func _process(delta):
 	# Interaction
 	if player_in_chat_zone:
 		if Input.is_action_just_pressed("interaction"):
-			print("chatting with npc")
-			$Dialogue.start()
-			is_roaming = false
-			is_chatting = true
-			$AnimatedSprite2D.play("idle")
-
+			if Global.chatted_to_techBaron == 0:
+				Global.chatted_to_techBaron += 1
+				print("chatting with npc")
+				$Dialogue.start("techBaron")
+				is_roaming = false
+				is_chatting = true
+				$AnimatedSprite2D.play("idle")
+				Global.player_can_move = false
 
 func choose(array):
 	array.shuffle()
@@ -79,5 +80,8 @@ func _on_timer_timeout():
 	
 
 func _on_dialogue_d_finished() -> void:
+	print("finished")
 	is_chatting = false
 	is_roaming = true
+	Global.player_can_move = true
+	

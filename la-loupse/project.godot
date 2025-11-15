@@ -18,7 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://scripts/global.gd"
-
 TransitionScreen="*res://scripts/component/transition_screen.tscn"
 
 [input]

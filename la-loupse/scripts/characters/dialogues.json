@@ -1,8 +1,14 @@
-[
-	{"name": "NPC1", "text": "Hello there!"},
-	{"name": "NPC1", "text": "Bye!"},
-	{"name": "NPC1", "text": "What do you want?!"},
-	{"name": "NPC1", "text": "...!"},
-	{"name": "cat", "text": "meow!"}
-	
-]	
+{
+  "techBaron": [
+	{"name": "Bernad Arnaque", "text": "Magnifique! Bonjour, my friend."},
+	{"name": "Bernad Arnaque", "text": "…"},
+	{"name": "Bernad Arnaque", "text": "Pardon, could you please stop poking my nose with your dictaphone?"},
+	{"name": "Bernad Arnaque", "text": "How can I help you?"}
+  ],
+  "priest": [
+	{"name": "Priest", "text": "I am the priest!"}
+  ],
+  "cat": [
+	{"name": "Kitty Cat", "text": "meow!"}
+  ]
+}

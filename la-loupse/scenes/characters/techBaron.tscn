@@ -104,6 +104,7 @@ radius = 128.01563
 script = ExtResource("1_yxk8k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
 scale = Vector2(6, 6)
 sprite_frames = SubResource("SpriteFrames_v3848")
 animation = &"move"
@@ -121,10 +122,10 @@ shape = SubResource("CircleShape2D_20idt")
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Dialogue" parent="." instance=ExtResource("3_rga5l")]
-offset_left = -5.0
-offset_top = -165.0
-offset_right = 35.0
-offset_bottom = -125.0
+offset_left = 120.0
+offset_top = -297.0
+offset_right = 157.0
+offset_bottom = -259.0
 
 [connection signal="body_entered" from="chatDetectionArea" to="." method="_on_chat_detection_area_body_entered"]
 [connection signal="body_exited" from="chatDetectionArea" to="." method="_on_chat_detection_area_body_exited"]

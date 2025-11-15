@@ -1,8 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2iv5d0i0nmuv"]
+[gd_scene load_steps=5 format=3 uid="uid://c2iv5d0i0nmuv"]
 
 [ext_resource type="Script" uid="uid://cg7dvyp6mq888" path="res://scripts/events/dialogue.gd" id="1_morba"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_q71jx"]
+
+[sub_resource type="FontVariation" id="FontVariation_morba"]
+
+[sub_resource type="FontVariation" id="FontVariation_fc7r2"]
 
 [node name="Dialogue" type="Control"]
 layout_mode = 3
@@ -15,8 +19,8 @@ script = ExtResource("1_morba")
 layout_mode = 0
 offset_left = -87.0
 offset_top = 38.0
-offset_right = 102.0
-offset_bottom = 128.0
+offset_right = 234.0
+offset_bottom = 203.0
 texture = SubResource("CanvasTexture_q71jx")
 patch_margin_left = 10
 patch_margin_top = 10
@@ -27,17 +31,20 @@ patch_margin_bottom = 10
 layout_mode = 0
 offset_left = 7.0
 offset_top = 4.0
-offset_right = 102.0
-offset_bottom = 28.0
+offset_right = 295.0
+offset_bottom = 38.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/normal_font_size = 13
+theme_override_fonts/normal_font = SubResource("FontVariation_morba")
+theme_override_font_sizes/normal_font_size = 20
 text = "name"
 
 [node name="text" type="RichTextLabel" parent="NinePatchRect"]
 layout_mode = 0
-offset_left = 7.0
-offset_top = 18.0
-offset_right = 181.0
-offset_bottom = 81.0
+offset_left = 9.0
+offset_top = 36.0
+offset_right = 309.0
+offset_bottom = 147.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = SubResource("FontVariation_fc7r2")
+theme_override_font_sizes/normal_font_size = 25
 text = "text"
