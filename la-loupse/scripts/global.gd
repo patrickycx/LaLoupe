@@ -8,6 +8,9 @@ var chapterName = "Notre-Dame"
 var destination = ""
 var player_can_move = true  # so the he cant move while talking
 
+## Secrets und so
+var secretsFound = 0
+
 
 ## Chatted tracker
 var chatted_to_priest = 0
