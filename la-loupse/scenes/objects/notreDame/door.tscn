@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://dtxroyltexe5b"]
+
+[ext_resource type="Script" uid="uid://qv1a6b3omcll" path="res://scripts/objects/notreDame/door.gd" id="1_d4ho5"]
+[ext_resource type="Texture2D" uid="uid://m0pq3po7udd1" path="res://assests/objects/Screenshot 2025-11-14 223030.png" id="2_vyqro"]
+[ext_resource type="PackedScene" uid="uid://bo8xsuy8v7uh4" path="res://components/interaction_component/interactable.tscn" id="3_ieu4c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5a0r"]
+size = Vector2(64, 56)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g5a0r"]
+radius = 35.0
+
+[node name="door" type="StaticBody2D"]
+script = ExtResource("1_d4ho5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("2_vyqro")
+region_enabled = true
+region_rect = Rect2(247.37384, 189.70877, 63.789856, 59.93445)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_g5a0r")
+
+[node name="Interactable" parent="." instance=ExtResource("3_ieu4c")]
+interact_name = "leave [E]"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
+position = Vector2(0, 14)
+shape = SubResource("CircleShape2D_g5a0r")
