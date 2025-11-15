@@ -1,0 +1,96 @@
+[gd_scene load_steps=2 format=3 uid="uid://c600nu8dh6gi0"]
+
+[ext_resource type="Script" uid="uid://cwuc3r7ndydvj" path="res://scripts/ui/main_menu.gd" id="1_gqnrb"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 2.0
+offset_bottom = 2.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gqnrb")
+
+[node name="MainButtons" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Start" type="Button" parent="MainButtons"]
+layout_mode = 1
+offset_left = -95.5
+offset_top = -31.5
+offset_right = 95.5
+offset_bottom = 31.5
+theme_override_font_sizes/font_size = 22
+text = "Start Game"
+
+[node name="Credits" type="Button" parent="MainButtons"]
+layout_mode = 1
+offset_left = -95.5
+offset_top = 50.0
+offset_right = 95.5
+offset_bottom = 113.0
+theme_override_font_sizes/font_size = 22
+text = "Credits"
+
+[node name="Quit" type="Button" parent="MainButtons"]
+layout_mode = 1
+offset_left = -95.5
+offset_top = 133.5
+offset_right = 95.5
+offset_bottom = 196.5
+theme_override_font_sizes/font_size = 22
+text = "Quit"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -223.5
+offset_top = -192.0
+offset_right = 223.5
+offset_bottom = -96.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 70
+text = "Perdu à Paris"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SoundButton" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SoundButton" type="CheckButton" parent="SoundButton"]
+layout_mode = 0
+offset_left = 467.0
+offset_top = 244.0
+offset_right = 511.0
+offset_bottom = 280.0
+scale = Vector2(1.7, 1.7)
+theme_override_font_sizes/font_size = 20
+button_pressed = true
+icon_alignment = 1
+
+[node name="SoundLabel" type="Label" parent="SoundButton"]
+layout_mode = 0
+offset_left = 471.0
+offset_top = 210.0
+offset_right = 538.0
+offset_bottom = 241.0
+theme_override_font_sizes/font_size = 22
+text = "Sound"
+
+[connection signal="pressed" from="MainButtons/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MainButtons/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="MainButtons/Quit" to="." method="_on_quit_pressed"]
+[connection signal="toggled" from="SoundButton/SoundButton" to="." method="_on_sound_button_toggled"]

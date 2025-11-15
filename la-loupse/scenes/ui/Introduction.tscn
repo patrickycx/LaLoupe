@@ -1,0 +1,72 @@
+[gd_scene load_steps=2 format=3 uid="uid://0dlggiv1b6lk"]
+
+[ext_resource type="Script" uid="uid://brhbebstmqvgd" path="res://scripts/ui/introduction.gd" id="1_nwhpt"]
+
+[node name="Introduction" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nwhpt")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -352.0
+offset_top = -181.0
+offset_right = 352.0
+offset_bottom = 151.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 22
+text = "Here will be an introduction!"
+
+[node name="Button_manager" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Continue" type="Button" parent="Button_manager"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 365.0
+offset_top = 202.0
+offset_right = 494.75
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "Continue"
+icon_alignment = 1
+
+[node name="Return" type="Button" parent="Button_manager"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -532.0
+offset_top = 202.0
+offset_right = -421.75
+offset_bottom = 260.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "Return"
+icon_alignment = 1
+
+[connection signal="pressed" from="Button_manager/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="Button_manager/Return" to="." method="_on_return_pressed"]
