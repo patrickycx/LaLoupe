@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://b5ejiunmapimq"]
+[gd_scene load_steps=11 format=3 uid="uid://b5ejiunmapimq"]
 
 [ext_resource type="Texture2D" uid="uid://bvx2s8lopre4y" path="res://assests/rooms/notre-dame1.png" id="1_3pmva"]
 [ext_resource type="PackedScene" uid="uid://beqha1apdm5l8" path="res://scenes/characters/player.tscn" id="2_jeddf"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://4jk1kmmpvhkb" path="res://scenes/characters/techBaron.tscn" id="4_25knu"]
 [ext_resource type="PackedScene" uid="uid://c47aag05pmo8p" path="res://scenes/characters/priest.tscn" id="5_ki8l3"]
 [ext_resource type="PackedScene" uid="uid://dm4340e28im5j" path="res://scenes/objects/notreDame/candle.tscn" id="6_0tv0f"]
+[ext_resource type="PackedScene" uid="uid://dwvdfqp0dlm1e" path="res://scenes/objects/notreDame/window_notre_dame.tscn" id="7_jeddf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_25knu"]
 texture = ExtResource("1_3pmva")
@@ -107,3 +108,6 @@ position = Vector2(-694, 479)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("6_0tv0f")]
 position = Vector2(586, -633)
+
+[node name="window_notre_dame" parent="." instance=ExtResource("7_jeddf")]
+position = Vector2(-320, -545)
