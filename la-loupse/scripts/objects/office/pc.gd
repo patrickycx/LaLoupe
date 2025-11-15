@@ -14,3 +14,4 @@ func _ready() -> void:
 func _on_interact():
 	# TODO
 	print("Success: I use computer.")
+	get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
