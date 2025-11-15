@@ -1,14 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://bh5jigrmx67x0"]
+[gd_scene load_steps=4 format=3 uid="uid://bh5jigrmx67x0"]
 
 [ext_resource type="Script" uid="uid://droolxts2u6el" path="res://scripts/objects/office/door.gd" id="1_cw5r5"]
-[ext_resource type="Texture2D" uid="uid://m0pq3po7udd1" path="res://assests/objects/Screenshot 2025-11-14 223030.png" id="2_rjr86"]
 [ext_resource type="PackedScene" uid="uid://bo8xsuy8v7uh4" path="res://components/interaction_component/interactable.tscn" id="3_keabo"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5a0r"]
-size = Vector2(64, 56)
-
 [sub_resource type="CircleShape2D" id="CircleShape2D_g5a0r"]
-radius = 15.656967
+radius = 23.003057
 
 [node name="door" type="StaticBody2D"]
 scale = Vector2(2, 2)
@@ -17,14 +13,8 @@ script = ExtResource("1_cw5r5")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -1)
 scale = Vector2(2, 2)
-texture = ExtResource("2_rjr86")
 region_enabled = true
 region_rect = Rect2(247.37384, 189.70877, 63.789856, 59.93445)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -3)
-scale = Vector2(2, 2)
-shape = SubResource("RectangleShape2D_g5a0r")
 
 [node name="Interactable" parent="." instance=ExtResource("3_keabo")]
 scale = Vector2(2, 2)

@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://fc3rlxl5m2ff"]
+
+[ext_resource type="Texture2D" uid="uid://dbtpu0p6t513k" path="res://assests/rooms/door_window_office.png" id="1_jhlls"]
+
+[node name="window" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("1_jhlls")
+region_enabled = true
+region_rect = Rect2(264, 0, 248, 384)
