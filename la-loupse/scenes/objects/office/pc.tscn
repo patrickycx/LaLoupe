@@ -14,6 +14,7 @@ radius = 65.65288
 size = Vector2(81.000015, 171.33334)
 
 [node name="pc" type="StaticBody2D"]
+rotation = -1.5707964
 script = ExtResource("1_8s8mw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
