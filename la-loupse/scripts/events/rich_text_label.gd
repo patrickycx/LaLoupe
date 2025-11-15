@@ -6,8 +6,3 @@ func _ready() -> void:
 	var filePath = "res://texts/newspapers/newspaper1.txt"
 	var content = FileAccess.open(filePath, FileAccess.READ).get_as_text()
 	set_text(content)
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
