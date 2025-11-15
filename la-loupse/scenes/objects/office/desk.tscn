@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1cm1o15ikfvg"]
+
+[ext_resource type="Texture2D" uid="uid://bnghw8fsbe3ul" path="res://assests/objects/office_things.PNG" id="1_uveup"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ot5mr"]
+size = Vector2(198, 151.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pdl7i"]
+size = Vector2(92, 149)
+
+[node name="desk" type="StaticBody2D"]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_uveup")
+region_enabled = true
+region_rect = Rect2(10, 258, 205, 254)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -52.75)
+shape = SubResource("RectangleShape2D_ot5mr")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(-58, 54)
+shape = SubResource("RectangleShape2D_pdl7i")
