@@ -10,9 +10,18 @@ var player_can_move = true  # so the he cant move while talking
 
 ## Secrets und so
 var secretsFound = 0
+var outcomeCompass = 0 
+## 0 the beginning. Depending on what Jean posts at the end of the day it will 
+## go up or down (results < 0 will lead to the negative ending.
+## results >= 0 will lead to a positive ending 
 
 
 ## Chatted tracker
 var chatted_to_priest = 0
 var chatted_to_techBaron = 0
 var chatted_to_cat = 0
+
+## Tracking what parts of the mission are done
+var notreDame_done = false
+var louvre_done = false
+var catacombes_done = false
