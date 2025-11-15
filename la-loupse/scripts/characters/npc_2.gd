@@ -68,15 +68,15 @@ func _on_chat_detection_area_body_entered(body: Node2D) -> void:
 
 
 func _on_chat_detection_area_body_exited(body: Node2D) -> void:
-	if body.name == "player":      
+	if body.name == "player": 
 		player_in_chat_zone = false
 
 
 func _on_timer_timeout():
 	$Timer.wait_time = choose([0.5, 1, 1.5])
-	$Timer.start()   
+	$Timer.start()   # <-- MUST RESTART
 	current_state = choose([IDLE, NEW_DIR, MOVE])
-	
+
 
 func _on_dialogue_d_finished() -> void:
 	is_chatting = false
