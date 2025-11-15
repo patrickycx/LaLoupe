@@ -9,19 +9,14 @@ enum State {
 	FINISHED,
 }
 
+func _ready() -> void:
+	hide_textbox()
+
 var current_state = State.READY
 var text_queue = []
+var textDisplayed = false
 
-func _ready():
-	print("Starting state: State.READY")
-	hide_textbox()
-	queue_text("First Test Text...")
-	queue_text("Second Test Text...")
-	queue_text("Third Test Text...")
-	queue_text("Forth Text")
-
-
-func _process(delta):
+func _process(_delta):
 	match current_state:
 		State.READY:
 			pass
@@ -34,9 +29,19 @@ func _process(delta):
 
 		State.FINISHED:
 			if Input.is_action_just_pressed("ui_accept"):
+				textDisplayed = false
 				change_state(State.READY)
 				hide_textbox()
-	
+
+# ONLY USE THE NAME OF THE FILE, NO ADDRESS, NO .JSON
+func loadText(data):
+	var file = FileAccess.open("res://texts/textbox/" + data + ".json", FileAccess.READ)
+	print("Loaded textbox file: " + data)
+	var content = JSON.parse_string(file.get_as_text())
+	text_queue = content
+	textDisplayed = true
+	display_text()
+	print("Content saved as text_queue")
 	
 func queue_text(next_text):
 	text_queue.push_back(next_text)
@@ -66,4 +71,3 @@ func change_state(next_state):
 
 		State.FINISHED:
 			print("Changing state to: State.FINISHED")
-			emit_signal("dialogue_finished")   # <-- fixed name
