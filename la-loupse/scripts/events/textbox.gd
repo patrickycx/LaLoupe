@@ -20,24 +20,24 @@ func _ready():
 	queue_text("Third Test Text...")
 	queue_text("Forth Text")
 
+
 func _process(delta):
 	match current_state:
 		State.READY:
+			pass
+			#change_state(State.READING)
+		State.READING:
 			if !text_queue.is_empty():
 				display_text()
 			if Input.is_action_just_pressed("ui_accept"):
-				State.FINISHED
-				
+				change_state(State.FINISHED)     # <-- fixed
 
-		State.READING:
-			# Here you could add typing or other effects later
-			pass
-		
 		State.FINISHED:
 			if Input.is_action_just_pressed("ui_accept"):
 				change_state(State.READY)
 				hide_textbox()
-
+	
+	
 func queue_text(next_text):
 	text_queue.push_back(next_text)
 
@@ -60,7 +60,10 @@ func change_state(next_state):
 	match current_state:
 		State.READY:
 			print("Changing state to: State.READY")
+
 		State.READING:
 			print("Changing state to: State.READING")
+
 		State.FINISHED:
 			print("Changing state to: State.FINISHED")
+			emit_signal("dialogue_finished")   # <-- fixed name
