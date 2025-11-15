@@ -74,6 +74,7 @@ radius = 49.09175
 radius = 132.0606
 
 [node name="cat" type="CharacterBody2D"]
+z_index = 2
 script = ExtResource("1_43gcw")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

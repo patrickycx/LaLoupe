@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwd3rpfr2plt2"]
+
+[ext_resource type="Texture2D" uid="uid://bnghw8fsbe3ul" path="res://assests/objects/office_things.PNG" id="1_np5en"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_np5en"]
+size = Vector2(95, 52)
+
+[node name="beistelltisch" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_np5en")
+region_enabled = true
+region_rect = Rect2(386, 53, 113, 53)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-7.5, 2)
+shape = SubResource("RectangleShape2D_np5en")
