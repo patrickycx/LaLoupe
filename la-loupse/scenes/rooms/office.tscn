@@ -2583,7 +2583,7 @@ layer_0/tile_data = PackedInt32Array(-327687, 2686978, 14, -262151, 2686978, 14,
 
 [node name="player" parent="." instance=ExtResource("2_cgde3")]
 z_index = 0
-position = Vector2(97, 46)
+position = Vector2(123, 44)
 
 [node name="day_label" type="Label" parent="player"]
 offset_left = 301.0
@@ -2603,4 +2603,4 @@ position = Vector2(-90, 35)
 position = Vector2(55, -186)
 
 [node name="letter" parent="." instance=ExtResource("6_gcaur")]
-position = Vector2(44, -133)
+position = Vector2(530, -236)

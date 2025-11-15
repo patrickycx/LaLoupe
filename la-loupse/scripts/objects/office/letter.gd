@@ -8,7 +8,13 @@ extends StaticBody2D
 
 # Detect the interaction (if E is pressed)
 func _ready() -> void:
-	interactable.interact = _on_interact
+	if Global.day == 1:
+		interactable.hide()
+		sprite_2d.hide()
+		position = Vector2(530, -230)
+	else:
+		interactable.interact = _on_interact
+		position = Vector2(44, -133)
 
 # What will happen after pressing E
 func _on_interact():
