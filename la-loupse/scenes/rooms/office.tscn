@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c816xdhwnlrmm"]
+[gd_scene load_steps=11 format=3 uid="uid://c816xdhwnlrmm"]
 
 [ext_resource type="Texture2D" uid="uid://dre3fkvltpryc" path="res://assests/rooms/office.png" id="1_oh624"]
 [ext_resource type="PackedScene" uid="uid://beqha1apdm5l8" path="res://scenes/characters/player.tscn" id="2_cgde3"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://3kx8ulhkdscq" path="res://scenes/objects/office/pc.tscn" id="4_vo3j2"]
 [ext_resource type="PackedScene" uid="uid://bh5jigrmx67x0" path="res://scenes/objects/office/door.tscn" id="5_vo3j2"]
 [ext_resource type="PackedScene" uid="uid://bapj4md3j0uqu" path="res://scenes/objects/office/letter.tscn" id="6_gcaur"]
+[ext_resource type="PackedScene" uid="uid://bvgkyjlyijg1o" path="res://scenes/characters/cat.tscn" id="8_hplsr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hplsr"]
 texture = ExtResource("1_oh624")
@@ -86,3 +87,6 @@ position = Vector2(498, -493)
 
 [node name="letter" parent="." instance=ExtResource("6_gcaur")]
 position = Vector2(430, -257)
+
+[node name="cat" parent="." instance=ExtResource("8_hplsr")]
+position = Vector2(152, -339)

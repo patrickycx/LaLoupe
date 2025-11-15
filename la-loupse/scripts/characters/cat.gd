@@ -45,7 +45,7 @@ func _process(delta):
 	if player_in_chat_zone:
 		if Input.is_action_just_pressed("interaction"):
 			print("chatting with npc")
-			$Dialogue.start()
+			$Dialogue.start("cat")
 			is_roaming = false
 			is_chatting = true
 			$AnimatedSprite2D.play("idle")
