@@ -40,6 +40,7 @@ func next_script():
 		emit_signal("dialogue finished")
 		return
 
+
 	$NinePatchRect/name.text = dialogue[current_dialogue_id]["name"]
 	print(dialogue[current_dialogue_id]["text"])
 	$NinePatchRect/text.text = dialogue[current_dialogue_id]["text"]

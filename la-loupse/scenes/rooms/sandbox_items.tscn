@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://c2rnefpt5tmdn"]
+[gd_scene load_steps=11 format=3 uid="uid://c2rnefpt5tmdn"]
 
 [ext_resource type="Texture2D" uid="uid://bgjs5fyli0hvp" path="res://assests/rooms/tiles.png" id="1_ysiyx"]
 [ext_resource type="PackedScene" uid="uid://beqha1apdm5l8" path="res://scenes/characters/player.tscn" id="2_1j04t"]
@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bfrpfdc68a0py" path="res://scenes/events/textbox.tscn" id="5_m7xjs"]
 [ext_resource type="PackedScene" uid="uid://4jk1kmmpvhkb" path="res://scenes/characters/npc_1.tscn" id="6_cjv3p"]
 [ext_resource type="PackedScene" uid="uid://c47aag05pmo8p" path="res://scenes/characters/npc_2.tscn" id="7_3rjj0"]
+[ext_resource type="PackedScene" uid="uid://bvgkyjlyijg1o" path="res://scenes/characters/cat.tscn" id="8_jausl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_glqmd"]
 texture = ExtResource("1_ysiyx")
@@ -2597,3 +2598,6 @@ position = Vector2(290, 163)
 
 [node name="NPC2" parent="." instance=ExtResource("7_3rjj0")]
 position = Vector2(-218, -73)
+
+[node name="cat" parent="." instance=ExtResource("8_jausl")]
+position = Vector2(38, 269)
