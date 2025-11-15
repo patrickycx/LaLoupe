@@ -11,7 +11,7 @@ func _ready() -> void:
 	interactable.interact = _on_interact
 
 func time_to_sleep(day, finished):
-	return (day == 1 and "Day1OfficeScene" in finished) or (day == 2 and "Day2OfficeScene" in finished) or (day == 3 and "Day3OfficeScene"  in finished)
+	return (day == 1 and "notreDameScene" in finished) or (day == 2 and "louvreScene" in finished) or (day == 3 and "catacombsScene"  in finished)
 	
 
 # What will happen after pressing E
@@ -21,5 +21,14 @@ func _on_interact():
 	else:
 		Global.day += 1
 		print("Success: I sleep.")
-		get_tree().change_scene_to_file("res://scenes/rooms/office.tscn")
+		Global.destination = "res://scenes/rooms/office.tscn"
+		Global.chapterNum = Global.day
+		match Global.chapterNum:
+			1:
+				Global.chapterName = "Notre-Dame"
+			2:
+				Global.chapterName = "Louvre"
+			3:
+				Global.chapterName = "Catacombs"
+		get_tree().change_scene_to_file("res://scenes/ui/coverChapter.tscn")
 	

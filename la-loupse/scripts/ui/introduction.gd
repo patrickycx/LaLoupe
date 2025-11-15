@@ -2,8 +2,10 @@ extends Control
 
 
 func _on_continue_pressed() -> void:
-	print("Continue to chapter 1")
-	get_tree().change_scene_to_file("res://scenes/ui/Cover_Chap1.tscn")
+	Global.destination = "res://scenes/rooms/office.tscn"
+	Global.chapterNum = 1
+	Global.chapterName = "Notre-Dame"
+	get_tree().change_scene_to_file("res://scenes/ui/coverChapter.tscn")
 
 
 func _on_return_pressed() -> void:

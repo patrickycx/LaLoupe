@@ -8,15 +8,11 @@ extends StaticBody2D
 
 # Detect the interaction (if E is pressed)
 func _ready() -> void:
-	if Global.day != 3:
-		interactable.hide()
-		sprite_2d.hide()
-		position = Vector2(530, -230)
-	else:
-		interactable.interact = _on_interact
-		position = Vector2(44, -133)
+	interactable.interact = _on_interact
 
 # What will happen after pressing E
 func _on_interact():
-	# TODO
-	print("Success: I read the letter.")
+	Global.finished.append("louvreScene")
+	print("Success: I go back to my room.")
+	get_tree().change_scene_to_file("res://scenes/rooms/office.tscn")
+	
