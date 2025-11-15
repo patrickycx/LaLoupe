@@ -11,10 +11,10 @@ func _ready() -> void:
 	if Global.day != 3:
 		interactable.hide()
 		sprite_2d.hide()
-		position = Vector2(530, -230)
+		position = Vector2(1400, -335)
 	else:
 		interactable.interact = _on_interact
-		position = Vector2(44, -133)
+		position = Vector2(430, -250)
 
 # What will happen after pressing E
 func _on_interact():

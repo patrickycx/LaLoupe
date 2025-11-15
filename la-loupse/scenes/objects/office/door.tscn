@@ -8,24 +8,29 @@
 size = Vector2(64, 56)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g5a0r"]
-radius = 35.0
+radius = 15.656967
 
 [node name="door" type="StaticBody2D"]
+scale = Vector2(2, 2)
 script = ExtResource("1_cw5r5")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -1)
+scale = Vector2(2, 2)
 texture = ExtResource("2_rjr86")
 region_enabled = true
 region_rect = Rect2(247.37384, 189.70877, 63.789856, 59.93445)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -3)
+scale = Vector2(2, 2)
 shape = SubResource("RectangleShape2D_g5a0r")
 
 [node name="Interactable" parent="." instance=ExtResource("3_keabo")]
+scale = Vector2(2, 2)
 interact_name = "leave [E]"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
-position = Vector2(0, 14)
+position = Vector2(0.25, 1.5)
+scale = Vector2(2, 2)
 shape = SubResource("CircleShape2D_g5a0r")

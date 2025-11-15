@@ -8,24 +8,29 @@
 size = Vector2(35, 67)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g5a0r"]
-radius = 35.0
+radius = 37.037334
 
 [node name="bed" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_g5a0r")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -1)
+scale = Vector2(3, 3)
 texture = ExtResource("1_us1fn")
 region_enabled = true
 region_rect = Rect2(485.4819, 291.69653, 43.015167, 77.427246)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -3.5)
+scale = Vector2(3, 3)
 shape = SubResource("RectangleShape2D_g5a0r")
 
 [node name="Interactable" parent="." instance=ExtResource("2_jx3i1")]
+scale = Vector2(1.5, 1.5)
 interact_name = "sleep [E]"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
 position = Vector2(0, 14)
+scale = Vector2(1.5, 1.5)
 shape = SubResource("CircleShape2D_g5a0r")

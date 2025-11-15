@@ -21,10 +21,10 @@ func _physics_process(_delta: float) -> void:
 
 		# Facing direction
 		if x_input > 0:
-			anim.flip_h = false
+			anim.flip_h = true
 			last_facing_right = true
 		elif x_input < 0:
-			anim.flip_h = true
+			anim.flip_h = false
 			last_facing_right = false
 		else:
 			# Moving only up/down → keep last horizontal direction

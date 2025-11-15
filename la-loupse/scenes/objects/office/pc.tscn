@@ -8,23 +8,28 @@
 size = Vector2(41, 79)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ckafw"]
-radius = 36.013885
+radius = 21.100061
 
 [node name="pc" type="StaticBody2D"]
+scale = Vector2(1.5, 1.5)
 script = ExtResource("1_8s8mw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.5, 1.5)
 texture = ExtResource("1_0p8th")
 region_enabled = true
 region_rect = Rect2(346.28076, 29.909088, 48.368134, 88.11635)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)
+scale = Vector2(1.5, 1.5)
 shape = SubResource("RectangleShape2D_0p8th")
 
 [node name="Interactable" parent="." instance=ExtResource("3_jpa83")]
+scale = Vector2(1.5, 1.5)
 interact_name = "use [E]"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interactable"]
 position = Vector2(0, 14)
+scale = Vector2(1.5, 1.5)
 shape = SubResource("CircleShape2D_ckafw")
