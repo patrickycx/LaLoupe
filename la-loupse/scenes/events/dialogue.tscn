@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2iv5d0i0nmuv"]
+
+[ext_resource type="Script" uid="uid://cg7dvyp6mq888" path="res://scripts/events/dialogue.gd" id="1_morba"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_q71jx"]
+
+[node name="Dialogue" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_morba")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_left = -87.0
+offset_top = 38.0
+offset_right = 102.0
+offset_bottom = 128.0
+texture = SubResource("CanvasTexture_q71jx")
+patch_margin_left = 10
+patch_margin_top = 10
+patch_margin_right = 10
+patch_margin_bottom = 10
+
+[node name="name" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 4.0
+offset_right = 102.0
+offset_bottom = 28.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 13
+text = "name"
+
+[node name="text" type="RichTextLabel" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 18.0
+offset_right = 181.0
+offset_bottom = 81.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "text"
