@@ -1,10 +1,13 @@
 {
   "techBaron": [
-	{"name": "Bernad Arnaque", "text": "Magnifique! Bonjour, my friend."},
-	{"name": "Bernad Arnaque", "text": "…"},
-	{"name": "Bernad Arnaque", "text": "Pardon, could you please stop poking my nose with your dictaphone?"},
-	{"name": "Bernad Arnaque", "text": "How can I help you?"}
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "Magnifique! Bonjour, my friend."},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "…"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "Pardon, could you please stop poking my nose with your dictaphone?"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "How can I help you?"}
   ],
+	"tonio": [
+		{"name": "'Tonio", "text": "MagOui, how can Monsieur help you?"}
+	  ],
   "priest": [
 	{"name": "Priest", "text": "I am the priest!"}
   ],
