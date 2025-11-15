@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cub86vg3w3g0e"]
+
+[ext_resource type="Texture2D" uid="uid://m0pq3po7udd1" path="res://assests/objects/Screenshot 2025-11-14 223030.png" id="2_l128i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g5a0r"]
+size = Vector2(64, 56)
+
+[node name="door" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("2_l128i")
+region_enabled = true
+region_rect = Rect2(247.37384, 189.70877, 63.789856, 59.93445)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_g5a0r")
