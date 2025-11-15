@@ -49,6 +49,7 @@ func _process(delta):
 				$Dialogue.start("techBaron")
 				$AnimatedSprite2D.play("idle")
 				Global.player_can_move = false
+				Global.secretsFound += 1
 			
 
 func choose(array):

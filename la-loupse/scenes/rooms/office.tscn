@@ -78,8 +78,15 @@ theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 script = ExtResource("3_oh624")
 
+[node name="Label" type="Label" parent="player"]
+offset_left = 102.0
+offset_top = -272.0
+offset_right = 209.0
+offset_bottom = -249.0
+text = "Secrets found"
+
 [node name="cat" parent="." instance=ExtResource("8_hplsr")]
-position = Vector2(871, -362)
+position = Vector2(869, -351)
 
 [node name="Objects" type="Node2D" parent="."]
 
@@ -98,5 +105,5 @@ position = Vector2(796, -341)
 [node name="beistelltisch" parent="Objects" instance=ExtResource("10_sm7fv")]
 position = Vector2(884, -177)
 
-[node name="pc" parent="." instance=ExtResource("4_vo3j2")]
+[node name="pc" parent="Objects" instance=ExtResource("4_vo3j2")]
 position = Vector2(200, -289)
