@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dsmaejix3squ6"]
+[gd_scene load_steps=5 format=3 uid="uid://dsmaejix3squ6"]
 
 [ext_resource type="Script" uid="uid://bp810d4mijpgn" path="res://scripts/ui/coverChapter.gd" id="1_yb1hf"]
 [ext_resource type="Script" uid="uid://c4yeasntogtsn" path="res://scripts/ui/chapter_name.gd" id="2_f408r"]
 [ext_resource type="Script" uid="uid://dttpx11wutby4" path="res://scripts/ui/chapter_number.gd" id="3_nxgbn"]
+[ext_resource type="Script" uid="uid://dt6358u584o4i" path="res://scripts/ui/rich_text_label.gd" id="4_f408r"]
 
 [node name="coverChapter" type="Control"]
 layout_mode = 3
@@ -11,6 +12,8 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
+offset_top = -91.0
+offset_bottom = -91.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yb1hf")
@@ -23,13 +26,13 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -352.0
-offset_top = 220.0
+offset_top = 344.0
 offset_right = 352.0
-offset_bottom = 258.5
+offset_bottom = 382.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 22
-text = "Click anywhere to continue"
+text = "Click space to continue"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -67,3 +70,12 @@ theme_override_font_sizes/font_size = 40
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_nxgbn")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = -287.0
+offset_top = 68.0
+offset_right = 289.0
+offset_bottom = 332.0
+theme_override_font_sizes/normal_font_size = 16
+script = ExtResource("4_f408r")
