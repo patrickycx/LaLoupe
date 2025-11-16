@@ -29,13 +29,13 @@ grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 22
 text = "A game by Team La Loupe in the Graveler Game Festival 2025:
 
-Story						Jonas, Andy, Edgar
-Dialogue					Edgar
-Graphics					Andy, Jonas
-Programming		Kathi, Patrick
-Trailer						Edgar
-Sound						Someone
-Game engine			Godot
+Story						Jonas Deller, Andreas Niederreiter, Edgar Rommel
+Dialogue					Edgar Rommel
+Graphics					Andreas Niederreiter, Jonas Deller
+Programming		Katharina Hamman, Chuxuan Ye
+Trailer						Edgar Rommel
+Sound						Jens XY, Leo
+Game engine	Godot
 
 Special thanks to the organisers of the Graveler Game Festival and the Franco-German Institute!"
 
