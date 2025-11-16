@@ -72,6 +72,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="SoundButton" type="CheckButton" parent="SoundButton"]
+visible = false
 layout_mode = 0
 offset_left = 467.0
 offset_top = 244.0
@@ -83,6 +84,7 @@ button_pressed = true
 icon_alignment = 1
 
 [node name="SoundLabel" type="Label" parent="SoundButton"]
+visible = false
 layout_mode = 0
 offset_left = 471.0
 offset_top = 210.0

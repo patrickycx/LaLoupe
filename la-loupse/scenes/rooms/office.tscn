@@ -90,7 +90,7 @@ layer_1/tile_data = PackedInt32Array(-327681, 131072, 1, -262145, 65536, 4, -196
 
 [node name="player" parent="." instance=ExtResource("2_cgde3")]
 z_index = 0
-position = Vector2(367, 65)
+position = Vector2(506, -72)
 
 [node name="day_label" type="Label" parent="player"]
 offset_left = 568.0
@@ -133,7 +133,7 @@ autoplay = true
 
 [node name="secretsFound_label" type="Label" parent="."]
 layout_direction = 1
-anchors_preset = -1
+anchors_preset = 10
 anchor_right = 1.0
 offset_right = 199.0
 offset_bottom = 42.0

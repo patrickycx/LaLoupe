@@ -16,7 +16,7 @@ func _ready() -> void:
 				Textbox.loadText("1_1")
 			elif Global.read_news and not Global.read_email and not Global.notreDame_done:
 				Textbox.loadText("1_2")
-			elif not Global.read_news and not Global.read_email and not Global.notreDame_done:
+			elif Global.read_news and Global.read_email and not Global.notreDame_done:
 				Textbox.loadText("1_3")
 		2:
 			pass
