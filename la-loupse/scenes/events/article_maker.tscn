@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://hja07cl3142y"]
+
+[ext_resource type="Script" uid="uid://cx7p4fsua18q2" path="res://scripts/events/article_maker.gd" id="1_r5sc6"]
+[ext_resource type="Texture2D" uid="uid://m0pq3po7udd1" path="res://assests/objects/Screenshot 2025-11-14 223030.png" id="2_gac0t"]
+
+[node name="articleMaker" type="Node2D"]
+script = ExtResource("1_r5sc6")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+offset_left = 775.0
+offset_top = 21.0
+offset_right = 1074.0
+offset_bottom = 187.0
+theme_override_font_sizes/normal_font_size = 20
+text = "Select between 2 to 6 secrets to include in your article for tomorrow.
+Maybe they'll even have an impact on the future..."
+
+[node name="secret1" type="Sprite2D" parent="."]
+position = Vector2(199, 289)
+scale = Vector2(4, 4)
+texture = ExtResource("2_gac0t")
+region_enabled = true
+region_rect = Rect2(666.71655, 294.09662, 29.262817, 41.13748)
+
+[node name="button1" type="Button" parent="secret1"]
+offset_left = -13.25
+offset_top = -19.25
+offset_right = 14.75
+offset_bottom = 20.25
+theme_override_colors/icon_pressed_color = Color(0.64705884, 0, 0.14901961, 0.6901961)
+
+[node name="button2" type="Label" parent="secret1"]
+offset_left = -21.25
+offset_top = 22.0
+offset_right = 24.75
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 8
+text = "Beispieltext"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+offset_left = 119.0
+offset_top = 18.0
+offset_right = 813.0
+offset_bottom = 168.0
+theme_override_font_sizes/normal_font_size = 60
+theme_override_font_sizes/bold_font_size = 40
+text = "Discovered Secrets"
+
+[node name="submit" type="Button" parent="."]
+offset_left = 459.0
+offset_top = 550.0
+offset_right = 618.0
+offset_bottom = 605.0
+theme_override_font_sizes/font_size = 30
+text = "Submit"
+
+[connection signal="pressed" from="secret1/button1" to="." method="_on_button_1_pressed"]

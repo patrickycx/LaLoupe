@@ -28,3 +28,4 @@ func _on_interact():
 			pass
 		else:
 			pass
+
