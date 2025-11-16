@@ -25,3 +25,8 @@ var chatted_to_cat = 0
 var notreDame_done = false
 var louvre_done = false
 var catacombes_done = false
+
+
+## Office tasks
+var read_news = false
+var read_email = false

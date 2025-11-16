@@ -24,21 +24,21 @@ func _process(_delta):
 		State.READING:
 			if !text_queue.is_empty():
 				display_text()
-			if Input.is_action_just_pressed("ui_accept"):
+			if Input.is_action_just_pressed("continue"):
 				change_state(State.FINISHED)     # <-- fixed
 
 		State.FINISHED:
-			if Input.is_action_just_pressed("ui_accept"):
+			if Input.is_action_just_pressed("continue"):
 				textDisplayed = false
 				change_state(State.READY)
 				hide_textbox()
 
 # ONLY USE THE NAME OF THE FILE, NO ADDRESS, NO .JSON
 func loadText(data):
-	var file = FileAccess.open("res://texts/textbox/" + data + ".json", FileAccess.READ)
+	var file = FileAccess.open("res://texts/textbox.json", FileAccess.READ)
 	print("Loaded textbox file: " + data)
 	var content = JSON.parse_string(file.get_as_text())
-	text_queue = content
+	text_queue = content[data]
 	textDisplayed = true
 	display_text()
 	print("Content saved as text_queue")
