@@ -130,12 +130,3 @@ layer_0/tile_data = PackedInt32Array(-262141, 65537, 2, -327677, 65537, 1, -3932
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("11_l5q7b")
 autoplay = true
-
-[node name="secretsFound_label" type="Label" parent="."]
-layout_direction = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_right = 199.0
-offset_bottom = 42.0
-theme_override_font_sizes/font_size = 30
-text = "Secrets found"

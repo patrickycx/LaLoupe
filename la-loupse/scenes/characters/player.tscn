@@ -119,6 +119,7 @@ animations = [{
 size = Vector2(95, 38)
 
 [node name="player" type="CharacterBody2D"]
+light_mask = 3
 z_index = 5
 script = ExtResource("1_yewv4")
 

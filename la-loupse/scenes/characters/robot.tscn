@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://brp7fm6bgopf8"]
+[gd_scene load_steps=6 format=3 uid="uid://brp7fm6bgopf8"]
 
 [ext_resource type="Texture2D" uid="uid://cwcku3ynhm77v" path="res://assests/characters/activist_and_robot.PNG" id="1_edyn1"]
+[ext_resource type="Script" uid="uid://s6b8hcw3mu7b" path="res://scripts/characters/robot.gd" id="1_uwdar"]
+[ext_resource type="PackedScene" uid="uid://cgi1ackepfh0b" path="res://scenes/events/dialogue.tscn" id="3_lhy3r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_edyn1"]
 size = Vector2(61, 84)
@@ -8,7 +10,8 @@ size = Vector2(61, 84)
 [sub_resource type="CircleShape2D" id="CircleShape2D_uwdar"]
 radius = 89.94443
 
-[node name="robot" type="CharacterBody2D"]
+[node name="robot_end" type="CharacterBody2D"]
+script = ExtResource("1_uwdar")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_edyn1")
@@ -24,3 +27,12 @@ shape = SubResource("RectangleShape2D_edyn1")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1, 8)
 shape = SubResource("CircleShape2D_uwdar")
+
+[node name="Dialogue" parent="." instance=ExtResource("3_lhy3r")]
+offset_left = -53.0
+offset_top = -417.0
+offset_right = -13.0
+offset_bottom = -377.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

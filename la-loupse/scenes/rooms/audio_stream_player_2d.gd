@@ -1,5 +1,5 @@
 extends AudioStreamPlayer2D
 
-
 func _on_area_2d_body_entered(body: Node) -> void:
-	play()
+	if body.is_in_group("player"):
+		play()
