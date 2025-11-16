@@ -101,10 +101,10 @@ position = Vector2(-511, -489)
 [node name="NPCs" type="Node" parent="."]
 
 [node name="priest" parent="NPCs" instance=ExtResource("5_ki8l3")]
-position = Vector2(273, 544)
+position = Vector2(412, 169)
 
 [node name="techBaron" parent="NPCs" instance=ExtResource("4_25knu")]
-position = Vector2(-694, 479)
+position = Vector2(-694, 123)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("6_0tv0f")]
 position = Vector2(586, -633)
