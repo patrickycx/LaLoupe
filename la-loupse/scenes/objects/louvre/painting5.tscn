@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bje2rrouknhp"]
+
+[ext_resource type="Texture2D" uid="uid://cktar22ljmra4" path="res://assests/objects/paintings lovre.png" id="1_fe2rj"]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fe2rj")
+region_enabled = true
+region_rect = Rect2(769.5929, 111.19519, 259.17114, 546.2627)

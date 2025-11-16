@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbsvfgmf043yr"]
+
+[ext_resource type="Texture2D" uid="uid://c6jj80bubyqyw" path="res://assests/objects/staright_column.png" id="1_pltpk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pltpk"]
+size = Vector2(139, 126.5)
+
+[node name="columns" type="StaticBody2D"]
+z_index = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_pltpk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 329.25)
+shape = SubResource("RectangleShape2D_pltpk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]

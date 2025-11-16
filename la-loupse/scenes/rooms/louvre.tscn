@@ -1,14 +1,20 @@
-[gd_scene load_steps=13 format=3 uid="uid://bdko0vsfachbc"]
+[gd_scene load_steps=19 format=3 uid="uid://bdko0vsfachbc"]
 
 [ext_resource type="Texture2D" uid="uid://bs2su6ik0yqdx" path="res://assests/rooms/spritesheet_louvre.png" id="1_5xfda"]
 [ext_resource type="PackedScene" uid="uid://beqha1apdm5l8" path="res://scenes/characters/player.tscn" id="2_73m4l"]
 [ext_resource type="PackedScene" uid="uid://lpuxt63eui2a" path="res://scenes/objects/louvre/door.tscn" id="3_5xfda"]
 [ext_resource type="PackedScene" uid="uid://dpgr20vbd48d" path="res://scenes/characters/police.tscn" id="4_73m4l"]
 [ext_resource type="PackedScene" uid="uid://bulg5h4m1rlbh" path="res://scenes/objects/louvre/bench.tscn" id="5_t82xp"]
-[ext_resource type="AudioStream" uid="uid://xil6jhu0x5g8" path="res://assests/audio/La Loup - Journalist Room 1.wav" id="6_f4w8c"]
 [ext_resource type="Script" uid="uid://cecafdndh6jxa" path="res://scenes/rooms/audio_stream_player_2d.gd" id="7_gkc87"]
+[ext_resource type="AudioStream" uid="uid://catkomog2be2y" path="res://assests/audio/La Loup - Diebstahl 2.wav" id="7_rs4oq"]
 [ext_resource type="PackedScene" uid="uid://4jk1kmmpvhkb" path="res://scenes/characters/techBaron.tscn" id="8_gkc87"]
 [ext_resource type="PackedScene" uid="uid://cgi1ackepfh0b" path="res://scenes/events/dialogue.tscn" id="9_yvxvn"]
+[ext_resource type="PackedScene" uid="uid://bnnnddhcuswff" path="res://scenes/objects/louvre/painting1.tscn" id="10_h0mbp"]
+[ext_resource type="PackedScene" uid="uid://bd56ctqcmlvr8" path="res://scenes/objects/louvre/painting2.tscn" id="11_kkgjg"]
+[ext_resource type="PackedScene" uid="uid://40xej1kx8vjg" path="res://scenes/objects/louvre/painting3.tscn" id="12_lgqiu"]
+[ext_resource type="PackedScene" uid="uid://qax2cfcaa10e" path="res://scenes/objects/louvre/painting4.tscn" id="13_borc4"]
+[ext_resource type="PackedScene" uid="uid://bje2rrouknhp" path="res://scenes/objects/louvre/painting5.tscn" id="14_rs4oq"]
+[ext_resource type="AudioStream" uid="uid://bht2uog275u6m" path="res://assests/audio/La Loup - Luvre Second 2.wav" id="15_gflop"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_73m4l"]
 texture = ExtResource("1_5xfda")
@@ -102,7 +108,8 @@ position = Vector2(-274, 453)
 shape = SubResource("SegmentShape2D_t82xp")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_f4w8c")
+stream = ExtResource("7_rs4oq")
+autoplay = true
 script = ExtResource("7_gkc87")
 
 [node name="Dialogue2" parent="." instance=ExtResource("9_yvxvn")]
@@ -110,6 +117,25 @@ offset_left = 65.0
 offset_top = -388.0
 offset_right = 105.0
 offset_bottom = -342.0
+
+[node name="painting1" parent="." instance=ExtResource("10_h0mbp")]
+position = Vector2(-1271, 258)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("11_kkgjg")]
+position = Vector2(626, -94)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("12_lgqiu")]
+position = Vector2(626, 520)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("13_borc4")]
+position = Vector2(-1279, 700)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("14_rs4oq")]
+position = Vector2(-1252, -199)
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_gflop")
+autoplay = true
 
 [connection signal="child_entered_tree" from="Area2D/CollisionShape2D2" to="player" method="_on_collision_shape_2d_2_child_entered_tree"]
 [connection signal="child_entered_tree" from="Area2D/CollisionShape2D2" to="AudioStreamPlayer2D" method="_on_collision_shape_2d_child_entered_tree"]
