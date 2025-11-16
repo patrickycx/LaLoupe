@@ -15,15 +15,20 @@ func _on_interact():
 	print("Success: I leave my room.")
 	match Global.day:
 		1:
-			if Global.read_email and Global.read_news:
+			if Global.read_email and Global.read_news and not Global.notreDame_done:
 				print("Direction: Notre-Dame.")
+				Global.notreDame_done = true
 				get_tree().change_scene_to_file("res://scenes/rooms/notreDame.tscn")
+			elif Global.notreDame_done:
+				Textbox.loadText("lateToGo")
 			else:
 				Textbox.loadText("waitDay1Tasks")
 		2:
 			print("Direction: Louvre.")
+			Global.louvre_done = true
 			get_tree().change_scene_to_file("res://scenes/rooms/louvre.tscn")
 		3:
 			print("Direction: Catacombs.")
+			Global.catacombes_done = true
 			get_tree().change_scene_to_file("res://scenes/rooms/catacombs.tscn")
 	

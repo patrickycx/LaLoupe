@@ -9,6 +9,19 @@ extends StaticBody2D
 # Detect the interaction (if E is pressed)
 func _ready() -> void:
 	interactable.interact = _on_interact
+	
+	match Global.day:
+		1:
+			if not Global.read_news and not Global.read_email and not Global.notreDame_done:
+				Textbox.loadText("1_1")
+			elif Global.read_news and not Global.read_email and not Global.notreDame_done:
+				Textbox.loadText("1_2")
+			elif not Global.read_news and not Global.read_email and not Global.notreDame_done:
+				Textbox.loadText("1_3")
+		2:
+			pass
+		3:
+			pass
 
 func time_to_sleep(day, finished):
 	return (day == 1 and "notreDameScene" in finished) or (day == 2 and "louvreScene" in finished) or (day == 3 and "catacombsScene"  in finished)
