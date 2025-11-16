@@ -24,7 +24,7 @@ func _ready():
 	$Timer.start()
 
 
-func _process(delta):
+func _process(_delta):
 	# Animation logic
 	if current_state == IDLE or current_state == NEW_DIR:
 		$AnimatedSprite2D.play("idle")
