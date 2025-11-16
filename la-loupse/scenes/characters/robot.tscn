@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://brp7fm6bgopf8"]
+
+[ext_resource type="Texture2D" uid="uid://cwcku3ynhm77v" path="res://assests/characters/activist_and_robot.PNG" id="1_edyn1"]
+
+[node name="robot" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_edyn1")
+region_enabled = true
+region_rect = Rect2(79, 391, 88, 110)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
