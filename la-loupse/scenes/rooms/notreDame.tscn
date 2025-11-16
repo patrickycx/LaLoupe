@@ -108,7 +108,7 @@ scale = Vector2(0.9, 0.9)
 position = Vector2(-694, 123)
 
 [node name="StaticBody2D" parent="." instance=ExtResource("6_0tv0f")]
-position = Vector2(586, -633)
+position = Vector2(399, -171)
 
 [node name="window_notre_dame" parent="." instance=ExtResource("7_jeddf")]
 position = Vector2(-320, -545)
