@@ -15,15 +15,15 @@ func _on_interact():
 	print("Success: I leave my room.")
 	match Global.day:
 		1:
-			Global.finished.append("Day1OfficeScene")
-			print("Direction: Notre-Dame.")
-			get_tree().change_scene_to_file("res://scenes/rooms/notreDame.tscn")
+			if Global.read_email and Global.read_news:
+				print("Direction: Notre-Dame.")
+				get_tree().change_scene_to_file("res://scenes/rooms/notreDame.tscn")
+			else:
+				Textbox.loadText("waitDay1Tasks")
 		2:
-			Global.finished.append("Day2OfficeScene")
 			print("Direction: Louvre.")
 			get_tree().change_scene_to_file("res://scenes/rooms/louvre.tscn")
 		3:
-			Global.finished.append("Day3OfficeScene")
 			print("Direction: Catacombs.")
 			get_tree().change_scene_to_file("res://scenes/rooms/catacombs.tscn")
 	
