@@ -52,17 +52,15 @@ offset_left = 781.0
 offset_top = 203.0
 offset_right = 1026.0
 offset_bottom = 255.0
-item_count = 5
+item_count = 4
 popup/item_0/text = "Skyscraper"
 popup/item_0/id = 0
 popup/item_1/text = "Culture connects people"
 popup/item_1/id = 1
 popup/item_2/text = "Burn down Notre-Dame"
 popup/item_2/id = 2
-popup/item_3/text = "Secret 4"
+popup/item_3/text = "Culture is a relict of the past"
 popup/item_3/id = 3
-popup/item_4/text = "Secret 5"
-popup/item_4/id = 4
 
 [node name="secret2" type="Sprite2D" parent="."]
 position = Vector2(239, 252)
@@ -114,34 +112,30 @@ offset_left = 785.0
 offset_top = 384.0
 offset_right = 1030.0
 offset_bottom = 436.0
-item_count = 5
-popup/item_0/text = "Secret 1"
+item_count = 4
+popup/item_0/text = "Skyscraper"
 popup/item_0/id = 0
-popup/item_1/text = "Secret 2"
+popup/item_1/text = "Culture connects people"
 popup/item_1/id = 1
-popup/item_2/text = "Secret 3"
+popup/item_2/text = "Burn down Notre-Dame"
 popup/item_2/id = 2
-popup/item_3/text = "Secret 4"
+popup/item_3/text = "Culture is a relict of the past"
 popup/item_3/id = 3
-popup/item_4/text = "Secret 5"
-popup/item_4/id = 4
 
 [node name="OptionButton3" type="OptionButton" parent="."]
 offset_left = 784.0
 offset_top = 294.0
 offset_right = 1029.0
 offset_bottom = 346.0
-item_count = 5
-popup/item_0/text = "Secret 1"
+item_count = 4
+popup/item_0/text = "Skyscraper"
 popup/item_0/id = 0
-popup/item_1/text = "Secret 2"
+popup/item_1/text = "Culture connects people"
 popup/item_1/id = 1
-popup/item_2/text = "Secret 3"
+popup/item_2/text = "Burn down Notre-Dame"
 popup/item_2/id = 2
-popup/item_3/text = "Secret 4"
+popup/item_3/text = "Culture is a relict of the past"
 popup/item_3/id = 3
-popup/item_4/text = "Secret 5"
-popup/item_4/id = 4
 
 [connection signal="pressed" from="submit" to="." method="_on_submit_pressed"]
 [connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
