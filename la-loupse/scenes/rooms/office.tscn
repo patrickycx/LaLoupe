@@ -108,7 +108,7 @@ position = Vector2(845, -522)
 [node name="Objects" type="Node2D" parent="."]
 
 [node name="letter" parent="Objects" instance=ExtResource("6_gcaur")]
-position = Vector2(208, -310)
+position = Vector2(326, -294)
 
 [node name="door" parent="Objects" instance=ExtResource("5_vo3j2")]
 position = Vector2(384, -498)

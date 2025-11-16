@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bapj4md3j0uqu"]
 
 [ext_resource type="Script" uid="uid://b2dusls6inmov" path="res://scripts/objects/office/letter.gd" id="1_rqoo2"]
-[ext_resource type="Texture2D" uid="uid://m0pq3po7udd1" path="res://assests/objects/Screenshot 2025-11-14 223030.png" id="2_qdg6b"]
+[ext_resource type="Texture2D" uid="uid://dw0ipnydx7v32" path="res://assests/objects/office_smallBits.PNG" id="2_2o0qt"]
 [ext_resource type="PackedScene" uid="uid://bo8xsuy8v7uh4" path="res://components/interaction_component/interactable.tscn" id="3_aqrrv"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_g5a0r"]
@@ -13,9 +13,9 @@ script = ExtResource("1_rqoo2")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -1)
 scale = Vector2(1.5, 1.5)
-texture = ExtResource("2_qdg6b")
+texture = ExtResource("2_2o0qt")
 region_enabled = true
-region_rect = Rect2(183.20609, 468.14835, 21.327667, 20.021881)
+region_rect = Rect2(346, 455, 66, 29)
 
 [node name="Interactable" parent="." instance=ExtResource("3_aqrrv")]
 interact_name = "read [E]"
