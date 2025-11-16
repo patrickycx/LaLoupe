@@ -16,8 +16,8 @@ text = "Select between 1 to 3 secrets to include in your article for tomorrow.
 Maybe they'll even have an impact on the future..."
 
 [node name="secret1" type="Sprite2D" parent="."]
-position = Vector2(146, 277)
-scale = Vector2(4, 4)
+position = Vector2(73, 251.00003)
+scale = Vector2(4.5172415, 3.512195)
 texture = ExtResource("2_gac0t")
 region_enabled = true
 region_rect = Rect2(666.71655, 294.09662, 29.262817, 41.13748)
@@ -53,11 +53,11 @@ offset_top = 203.0
 offset_right = 1026.0
 offset_bottom = 255.0
 item_count = 5
-popup/item_0/text = "Secret 1"
+popup/item_0/text = "Skyscraper"
 popup/item_0/id = 0
-popup/item_1/text = "Secret 2"
+popup/item_1/text = "Culture connects people"
 popup/item_1/id = 1
-popup/item_2/text = "Secret 3"
+popup/item_2/text = "Burn down Notre-Dame"
 popup/item_2/id = 2
 popup/item_3/text = "Secret 4"
 popup/item_3/id = 3
@@ -65,8 +65,8 @@ popup/item_4/text = "Secret 5"
 popup/item_4/id = 4
 
 [node name="secret2" type="Sprite2D" parent="."]
-position = Vector2(355.75, 276.75)
-scale = Vector2(4.454, 4)
+position = Vector2(239, 252)
+scale = Vector2(4.408035, 3.640244)
 texture = ExtResource("2_gac0t")
 region_enabled = true
 region_rect = Rect2(666.71655, 294.09662, 29.262817, 41.13748)
@@ -80,13 +80,28 @@ theme_override_font_sizes/font_size = 8
 text = "Beispieltext"
 
 [node name="secret3" type="Sprite2D" parent="."]
-position = Vector2(591.0001, 274)
-scale = Vector2(4.96, 4)
+position = Vector2(422.38, 245.0625)
+scale = Vector2(4.8013787, 3.3628054)
 texture = ExtResource("2_gac0t")
 region_enabled = true
 region_rect = Rect2(666.71655, 294.09662, 29.262817, 41.13748)
 
 [node name="button2" type="Label" parent="secret3"]
+offset_left = -21.25
+offset_top = 22.0
+offset_right = 24.75
+offset_bottom = 45.0
+theme_override_font_sizes/font_size = 8
+text = "Beispieltext"
+
+[node name="secret3" type="Sprite2D" parent="secret3"]
+position = Vector2(35.07922, -0.2052387)
+scale = Vector2(0.99511933, 1.0360281)
+texture = ExtResource("2_gac0t")
+region_enabled = true
+region_rect = Rect2(666.71655, 294.09662, 29.262817, 41.13748)
+
+[node name="button2" type="Label" parent="secret3/secret3"]
 offset_left = -21.25
 offset_top = 22.0
 offset_right = 24.75

@@ -11,15 +11,25 @@ var d_active = false
 func _ready():
 	$NinePatchRect.visible = false
 	
-func start(char_key):
+func start(char_key: String, id: int = 0):
 	if d_active:
 		return
+
 	d_active = true
 	$NinePatchRect.visible = true
+
 	var all_dialogues = load_dialogue()
 	dialogue = all_dialogues[char_key]
-	current_dialogue_id = -1
+
+	# Start from specific ID or default to 0
+	if id >= 0 and id < dialogue.size():
+		current_dialogue_id = id - 1
+	else:
+		print("Dialogue ID out of range, starting from 0 instead.")
+		current_dialogue_id = -1
+
 	next_script()
+
 	
 func load_dialogue():
 	var file = FileAccess.open("res://scripts/characters/dialogues.json", FileAccess.READ)

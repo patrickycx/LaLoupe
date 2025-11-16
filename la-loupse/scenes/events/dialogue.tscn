@@ -19,8 +19,8 @@ script = ExtResource("1_morba")
 layout_mode = 0
 offset_left = -87.0
 offset_top = 38.0
-offset_right = 269.0
-offset_bottom = 220.0
+offset_right = 432.0
+offset_bottom = 294.0
 texture = SubResource("CanvasTexture_q71jx")
 patch_margin_left = 10
 patch_margin_top = 10
@@ -29,10 +29,10 @@ patch_margin_bottom = 10
 
 [node name="name" type="RichTextLabel" parent="NinePatchRect"]
 layout_mode = 0
-offset_left = 7.0
-offset_top = 4.0
-offset_right = 345.0
-offset_bottom = 49.0
+offset_left = 26.0
+offset_top = 8.0
+offset_right = 364.0
+offset_bottom = 53.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = SubResource("FontVariation_morba")
 theme_override_font_sizes/normal_font_size = 20
@@ -40,10 +40,10 @@ text = "name"
 
 [node name="text" type="RichTextLabel" parent="NinePatchRect"]
 layout_mode = 0
-offset_left = 8.0
-offset_top = 44.0
-offset_right = 346.0
-offset_bottom = 173.0
+offset_left = 22.0
+offset_top = 55.0
+offset_right = 501.0
+offset_bottom = 225.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = SubResource("FontVariation_fc7r2")
 theme_override_font_sizes/normal_font_size = 25

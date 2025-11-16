@@ -11,8 +11,6 @@ func _on_option_button_item_selected(index: int) -> void:
 		2: sum += 0
 		3: sum -= 3
 		4: sum -= 1
-		5: sum -= 2
-		6: sum += 2
 
 func _on_option_button_2_item_selected(index: int) -> void:
 	match index:
@@ -21,8 +19,6 @@ func _on_option_button_2_item_selected(index: int) -> void:
 		2: sum += 0
 		3: sum -= 3
 		4: sum -= 1
-		5: sum -= 2
-		6: sum += 2
 
 func _on_option_button_3_item_selected(index: int) -> void:
 	match index:
@@ -31,8 +27,6 @@ func _on_option_button_3_item_selected(index: int) -> void:
 		2: sum += 0
 		3: sum -= 3
 		4: sum -= 1
-		5: sum -= 2
-		6: sum += 2
 
 func _on_submit_pressed():
 	if oneSelected == true:

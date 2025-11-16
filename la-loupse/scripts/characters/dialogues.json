@@ -1,17 +1,44 @@
 {
   "techBaron": [
-	{"name": "Bernad Arnaque - Baron de la tech", "text": "Magnifique! Bonjour, my friend."},
-	{"name": "Bernad Arnaque - Baron de la tech", "text": "…"},
-	{"name": "Bernad Arnaque - Baron de la tech", "text": "Pardon, could you please stop poking my nose with your dictaphone?"},
-	{"name": "Bernad Arnaque - Baron de la tech", "text": "How can I help you?"}
+	{"name": "Jean", "text": "I am a journalist for Investigate Paris.", "id": "0"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "Magnifique! Bonjour, my friend.", "id": "1"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "…", "id": "1"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "Pardon, could you please stop poking my nose with your dictaphone?", "id": "2"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "How can I help you?", "id": "1"},
+	{"name": "Assistant 'Tonio", "text": "Oui, how can Monsieur help you?", "id": "1"},
+	{"name": "Jean", "text": "I have a few questions for you. What can you tell me about your new project?", "id": "2"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "Ah, you heard about my plans for the Louvre?", "id": "2"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "They just finished that ugly glass pyramid this year—and for what? So tourists can stare at some old paintings we Parisians don’t even care about. Fichtre!
+", "id": "2"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "Ah, you heard about my plans for the Louvre?", "id": "2"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "They just finished that ugly glass pyramid this year—and for what? So tourists can stare at some old paintings we Parisians don’t even care about. Fichtre!", "id": "2"},
+	{"name": "Assistant 'Tonio", "text": "Fichtre!", "id": "1"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "If you ask me, we should give the people of Paris something they would truly benefit from: a beautiful skyscraper.", "id": "2"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "With bright neon-colored signs on top, illuminating my name across the night sky.", "id": "2"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "And of course, a spot to land my helicopter. I mean—wouldn’t everyone benefit from that?", "id": "2"},
+	{"name": "Assistant 'Tonio", "text": "Magnifique!", "id": "1"},
+	{"name": "Bernad Arnaque - Baron de la tech", "text": "It will be très modern, très chic", "id": "2"},
+	{"name": "Jean", "text": "I—uh—is there anything else you want to tell our readers?", "id": "1"},
+	{"name": "Bernad Arnaque", "text": "Liberté, Égalité, more monéy!", "id": "1"},
+	{"name": "Assistant 'Tonio", "text": "Magnifique! Magnifique! Magnifique!", "id": "1"},
+	{"name": "Jean", "text": "…", "id": "1"},
+	{"name": "Jean", "text": "Thank you for your precious time, Monsieur Arnaque!", "id": "1"},
+	
   ],
-	"tonio": [
-		{"name": "'Tonio", "text": "MagOui, how can Monsieur help you?"}
-	  ],
-  "priest": [
-	{"name": "Priest", "text": "I am the priest!"}
-  ],
+"priest": [
+  { "name": "Jean", "text": "Good afternoon, Father. I'm Jean, a journalist. I’m researching why culture is so important to people. Could I ask you a few questions?" },
+  { "name": "Priest", "text": "Of course, Jean. Notre-Dame itself stands as a symbol of our shared culture. What would you like to know?" },
+  { "name": "Jean", "text": "Many people talk about culture as if it’s something we must protect. Why do you think that is?" },
+  { "name": "Priest", "text": "Culture carries our memories, our identity, and our hopes. Without it, we lose the stories that tell us who we are." },
+  { "name": "Jean", "text": "So it connects people across generations?" },
+  { "name": "Priest", "text": "Exactly. Culture is a bridge between past and present. It reminds us that we belong to something larger than ourselves." },
+  { "name": "Jean", "text": "Thank you, Father. That’s exactly the kind of insight I was looking for." },
+  { "name": "Priest", "text": "Anytime, Jean. May your article inspire others to cherish what we share." }
+],
   "cat": [
+	{"name": "Kitty Cat", "text": "meow!"}
+  ],
+  "candle": [
 	{"name": "Kitty Cat", "text": "meow!"}
   ]
 }
