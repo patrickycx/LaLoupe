@@ -1,8 +1,9 @@
 {
-	"dontSleep": ["It's not yet time to sleep! You just woke up!"],
+	"dontSleep": ["It's not yet time to sleep! I just woke up!"],
 	"1_1": ["Another morning - another day where I hope my coffee does the talking.", "Maybe today I’ll write something brilliant… by accident.", "Well, maybe I should read some headlines first before I write some news myself."],
 	"1_2": ["I can’t believe people are falling for this.", "They say the public is becoming more and more indifferent towards culture.", "If culture is dying… I refuse to let it die quietly.", "I should investigate that!"],
-	"waitComputer": ["The computer needs a moment to wake up… much like me.", "I guess I should skim the headlines first before I try to write any news myself."],
+	"waitComputer": ["The computer needs a moment to wake up… much like me."],
+	"waitDay1Tasks": ["I guess I should skim the headlines first before I try to write any news myself."],
 	"1_3": ["Why is his subject line always shouting at me?"],
 	"window": ["I can see the Eiffel Tower from here. Is that why I pay too much rent?"],
 	"coffeeMug": ["Let’s not break another coffee mug.", "The fuel that keeps me running… literally."],

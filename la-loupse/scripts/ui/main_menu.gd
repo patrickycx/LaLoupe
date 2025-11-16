@@ -6,6 +6,11 @@ func _on_start_pressed() -> void:
 	print("Start game")
 	get_tree().change_scene_to_file("res://scenes/ui/Introduction.tscn")
 
+func _input(event: InputEvent) -> void:
+	if Input.is_action_just_pressed("continue"):
+		print("Start game")
+		get_tree().change_scene_to_file("res://scenes/ui/Introduction.tscn")
+
 func _on_credits_pressed() -> void:
 	print("Show credits")
 	get_tree().change_scene_to_file("res://scenes/ui/Credits.tscn")

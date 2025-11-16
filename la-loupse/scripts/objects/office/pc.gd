@@ -17,8 +17,12 @@ func _on_interact():
 		if (Global.notreDame_done == true):
 			print("Was in notre dame")
 		else:
-			Global.reading = "email"
-			get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
+			if Global.read_news:
+				Global.reading = "email"
+				Global.read_email = true
+				get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
+			else:
+				Textbox.loadText("waitComputer")
 	if Global.day == 2:
 		if (Global.louvre_done == true):
 			pass
@@ -29,4 +33,3 @@ func _on_interact():
 			pass
 		else:
 			pass
-

@@ -24,6 +24,7 @@ func _on_interact():
 	match Global.day:
 		1:
 			Global.reading = "newspaper"
+			Global.read_news = true
 			get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
 		2:
 			pass
