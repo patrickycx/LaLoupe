@@ -23,7 +23,8 @@ func receiveNews(day, finished):
 func _on_interact():
 	match Global.day:
 		1:
-			get_tree().change_scene_to_file("res://texts/fullscreen/newspaper1.txt")
+			Global.reading = "newspaper"
+			get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
 		2:
 			pass
 		3:
