@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://b5ejiunmapimq"]
+[gd_scene load_steps=16 format=3 uid="uid://b5ejiunmapimq"]
 
 [ext_resource type="Texture2D" uid="uid://bvx2s8lopre4y" path="res://assests/rooms/notre-dame1.png" id="1_3pmva"]
 [ext_resource type="PackedScene" uid="uid://beqha1apdm5l8" path="res://scenes/characters/player.tscn" id="2_jeddf"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dbsvfgmf043yr" path="res://scenes/objects/notreDame/columns.tscn" id="9_d5644"]
 [ext_resource type="PackedScene" uid="uid://crdj167krg0qb" path="res://scenes/diaColumn.tscn" id="10_kkilf"]
 [ext_resource type="PackedScene" uid="uid://cdjclb6wyql7m" path="res://scenes/objects/louvre/bench_notreDame.tscn" id="11_ttxgy"]
+[ext_resource type="AudioStream" uid="uid://bfod112qnuiiq" path="res://assests/audio/La Loup - Notre Dame 2.wav" id="12_eeba5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_25knu"]
 texture = ExtResource("1_3pmva")
@@ -173,3 +174,4 @@ position = Vector2(-307, -124)
 position = Vector2(-313, 16)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_eeba5")
