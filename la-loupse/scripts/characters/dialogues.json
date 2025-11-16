@@ -143,5 +143,17 @@
 	{ "name": "Jean", "text": "I just met a robot whose love language is cultural destruction." },
 	{ "name": "Jean", "text": "…I need to warn someone." },
 	{ "name": "Jean", "text": "Fast." }
-  ]
+  ],
+"robot_end": [
+	{"name": "Assistant 'Tonio", "text": "beep boop!"}
+  ],
+"police": [
+	{"name": "Police", "text": "No step further!"}
+  ],
+"activist": [
+	{"name": "Activist", "text": "Justice!"}
+  ],
+"audiotrack": [
+	{"name": "Security", "text": "Halte! Arrêtez-vous! The Mona Lisa got stolen!"}
+  ],
 }

@@ -11,7 +11,6 @@ var reading = ""
 
 
 ## Secrets und so
-var secretsFound = 0
 var outcomeCompass_firstDay = 0 
 ## 0 the beginning. Depending on what Jean posts at the end of the day it will 
 ## go up or down (results < 0 will lead to the negative ending.
@@ -22,6 +21,9 @@ var outcomeCompass_firstDay = 0
 var chatted_to_priest = 0
 var chatted_to_techBaron = 0
 var chatted_to_cat = 0
+var chatted_to_police = 0
+var chatted_to_activist = 0
+var chatted_to_robot = 0
 
 ## Tracking what parts of the mission are done
 var notreDame_done = false
@@ -38,5 +40,5 @@ var secrets = [
 	"skyscraper", # secret negative
 	"culture",
 	"priest", # secret positive
-	"candle",  #secret positive
+	#"candle",  #secret positive
 ]

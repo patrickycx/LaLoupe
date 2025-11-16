@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://5uddmq617jty"]
+[gd_scene load_steps=6 format=3 uid="uid://5uddmq617jty"]
 
 [ext_resource type="Texture2D" uid="uid://cwcku3ynhm77v" path="res://assests/characters/activist_and_robot.PNG" id="1_eokcd"]
+[ext_resource type="Script" uid="uid://diiqlpl4nipp4" path="res://scripts/characters/activist.gd" id="1_wno3q"]
+[ext_resource type="PackedScene" uid="uid://cgi1ackepfh0b" path="res://scenes/events/dialogue.tscn" id="3_qtmns"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wno3q"]
 size = Vector2(101, 219.5)
@@ -8,7 +10,8 @@ size = Vector2(101, 219.5)
 [sub_resource type="CircleShape2D" id="CircleShape2D_eokcd"]
 radius = 172.05232
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="activist" type="CharacterBody2D"]
+script = ExtResource("1_wno3q")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_eokcd")
@@ -24,3 +27,12 @@ shape = SubResource("RectangleShape2D_wno3q")
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(24, 15)
 shape = SubResource("CircleShape2D_eokcd")
+
+[node name="Dialogue" parent="." instance=ExtResource("3_qtmns")]
+offset_left = 89.0
+offset_top = -426.0
+offset_right = 129.0
+offset_bottom = -386.0
+
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

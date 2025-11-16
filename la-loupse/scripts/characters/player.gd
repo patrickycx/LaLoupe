@@ -38,3 +38,7 @@ func _physics_process(_delta: float) -> void:
 		anim.flip_h = not last_facing_right
 
 	move_and_slide()
+
+
+func _on_collision_shape_2d_2_child_entered_tree(node: Node) -> void:
+	$Dialogue.start("audiotrack")
