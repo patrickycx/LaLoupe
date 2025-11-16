@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdjclb6wyql7m"]
+
+[ext_resource type="Texture2D" uid="uid://jpw7skp55icw" path="res://assests/objects/bench.PNG" id="1_g202n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3my27"]
+size = Vector2(126, 338)
+
+[node name="bench" type="StaticBody2D"]
+rotation = 1.5707964
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(53, -129)
+shape = SubResource("RectangleShape2D_3my27")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_g202n")

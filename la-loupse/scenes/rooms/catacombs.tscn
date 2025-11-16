@@ -46,3 +46,5 @@ position = Vector2(-193, 315)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_2av0g")]
 position = Vector2(-216, -1817)
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
