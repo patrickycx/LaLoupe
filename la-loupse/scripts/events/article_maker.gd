@@ -1,11 +1,43 @@
 extends Node2D
 
-var sum = 0
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+var sum := 0
+var oneSelected = false
+
+func _on_option_button_item_selected(index: int) -> void:
+	oneSelected = true
+	match index:
+		0: sum += 1
+		1: sum += 3
+		2: sum += 0
+		3: sum -= 3
+		4: sum -= 1
+		5: sum -= 2
+		6: sum += 2
+
+func _on_option_button_2_item_selected(index: int) -> void:
+	match index:
+		0: sum += 1
+		1: sum += 3
+		2: sum += 0
+		3: sum -= 3
+		4: sum -= 1
+		5: sum -= 2
+		6: sum += 2
+
+func _on_option_button_3_item_selected(index: int) -> void:
+	match index:
+		0: sum += 1
+		1: sum += 3
+		2: sum += 0
+		3: sum -= 3
+		4: sum -= 1
+		5: sum -= 2
+		6: sum += 2
+
+func _on_submit_pressed():
+	if oneSelected == true:
+		print(sum)
+		get_tree().change_scene_to_file("res://scenes/rooms/office.tscn")
+		Global.outcomeCompass_firstDay = sum
+		print(Global.outcomeCompass_firstDay)
 	
-
-
-func _on_button_1_pressed() -> void:
-	sum += 1

@@ -12,7 +12,7 @@ var reading = ""
 
 ## Secrets und so
 var secretsFound = 0
-var outcomeCompass = 0 
+var outcomeCompass_firstDay = 0 
 ## 0 the beginning. Depending on what Jean posts at the end of the day it will 
 ## go up or down (results < 0 will lead to the negative ending.
 ## results >= 0 will lead to a positive ending 
