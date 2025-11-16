@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://b2i1t4qympntv"]
+[gd_scene load_steps=7 format=3 uid="uid://b2i1t4qympntv"]
 
 [ext_resource type="Texture2D" uid="uid://cggdrgyt6uq0e" path="res://assests/rooms/notre_dame1.png" id="1_d4pli"]
 [ext_resource type="PackedScene" uid="uid://beqha1apdm5l8" path="res://scenes/characters/player.tscn" id="2_wee7r"]
 [ext_resource type="PackedScene" uid="uid://brp7fm6bgopf8" path="res://scenes/characters/robot.tscn" id="3_d4pli"]
+[ext_resource type="AudioStream" uid="uid://bnd5ug6m5mmh2" path="res://assests/audio/La Loup - Katakomben 2.wav" id="4_wee7r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2av0g"]
 texture = ExtResource("1_d4pli")
@@ -48,3 +49,4 @@ position = Vector2(-193, 315)
 position = Vector2(-200, -1759)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_wee7r")
