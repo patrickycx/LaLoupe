@@ -16,6 +16,7 @@ func _on_interact():
 	if (Global.day == 1):
 		if (Global.notreDame_done == true):
 			print("Was in notre dame")
+			get_tree().change_scene_to_file("res://scenes/events/article_maker.tscn")
 		else:
 			get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
 	if Global.day == 2:
@@ -28,4 +29,3 @@ func _on_interact():
 			pass
 		else:
 			pass
-
