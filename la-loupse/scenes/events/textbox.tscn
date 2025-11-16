@@ -18,9 +18,13 @@ anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -238.0
+offset_left = 189.0
+offset_top = -176.0
+offset_right = 189.0
+offset_bottom = 62.0
 grow_horizontal = 2
 grow_vertical = 0
+scale = Vector2(0.65328604, 0.65328604)
 
 [node name="Panel" type="Panel" parent="TextboxContainer"]
 layout_mode = 2
@@ -42,5 +46,6 @@ layout_mode = 2
 [node name="Label" type="RichTextLabel" parent="TextboxContainer/MarginContainer2"]
 custom_minimum_size = Vector2(3, 3)
 layout_mode = 2
-theme_override_font_sizes/normal_font_size = 45
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/normal_font_size = 30
 text = "test"
