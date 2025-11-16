@@ -38,9 +38,12 @@ func _ready():
 			if Global.chatted_to_police == 0:
 				Global.chatted_to_police += 1
 				$Dialogue.start()
+				Global.ending = "Paris continues, "
+				Global.endingline2 = "its fate resting in the hands of its people."
 				is_roaming = false
 				is_chatting = true
 				$AnimatedSprite2D.play("idle")
+				get_tree().change_scene_to_file("res://scenes/ui/endScene.tscn")
 
 
 func choose(array):

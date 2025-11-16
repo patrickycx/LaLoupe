@@ -37,9 +37,12 @@ func _ready():
 			if Global.chatted_to_robot == 0:
 				Global.chatted_to_robot += 1
 				$Dialogue.start()
+				Global.ending = "You have reached the end of the story. Culture has faded."
+				Global.endingline2 = "The machines advance. And Paris… no longer remembers itself."
 				is_roaming = false
 				is_chatting = true
 				$AnimatedSprite2D.play("idle")
+				get_tree().change_scene_to_file("res://scenes/ui/endScene.tscn")
 
 
 func choose(array):

@@ -32,6 +32,7 @@ func _on_submit_pressed():
 	if oneSelected == true:
 		print(sum)
 		get_tree().change_scene_to_file("res://scenes/rooms/office.tscn")
+		Global.article_done = true
 		Global.outcomeCompass_firstDay = sum
 		print(Global.outcomeCompass_firstDay)
 	

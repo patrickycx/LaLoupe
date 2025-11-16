@@ -33,13 +33,20 @@ func _ready():
 				pass
 	# Interaction
 	if player_in_chat_zone:
+		print("player in zone")
 		if Input.is_action_just_pressed("interaction"):
+			print("interaction pressed")
 			if Global.chatted_to_activist == 0:
 				Global.chatted_to_activist += 1
 				$Dialogue.start()
+				Global.ending = "You saved Parisian culture."
+				Global.endingline2 = "Thank you for listening when others chose silence."
 				is_roaming = false
 				is_chatting = true
 				$AnimatedSprite2D.play("idle")
+				print("Activist ending")
+				print(Global.chatted_to_activist)
+				get_tree().change_scene_to_file("res://scenes/ui/endScene.tscn")
 
 
 func choose(array):

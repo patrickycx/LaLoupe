@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://c44p85po8omxa"]
+
+[ext_resource type="Script" uid="uid://dixg06g30x8n1" path="res://scripts/ui/end_scene.gd" id="1_10pin"]
+[ext_resource type="Script" uid="uid://c0yo6ut5d2gs0" path="res://scripts/ui/label.gd" id="1_i67j7"]
+[ext_resource type="Script" uid="uid://cmtehnobua4b7" path="res://scripts/ui/label_2.gd" id="2_glrvv"]
+
+[node name="EndScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_10pin")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -271.5
+offset_top = -21.0
+offset_right = 271.5
+offset_bottom = 21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+script = ExtResource("1_i67j7")
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -272.5
+offset_top = -76.0
+offset_right = 272.5
+offset_bottom = -34.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+script = ExtResource("2_glrvv")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 452.0
+offset_top = 555.0
+offset_right = 646.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 20
+text = "Back to Main Menu"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

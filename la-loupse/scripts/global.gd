@@ -34,6 +34,7 @@ var catacombes_done = false
 ## Office tasks
 var read_news = false
 var read_email = false
+var article_done = false
 
 ## Secrets
 var secrets = [
@@ -42,3 +43,6 @@ var secrets = [
 	"priest", # secret positive
 	#"candle",  #secret positive
 ]
+
+var ending = ""
+var endingline2 = ""

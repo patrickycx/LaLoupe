@@ -33,16 +33,20 @@ func _on_interact():
 		print("Success: It's not time to sleep.")
 		Textbox.loadText("dontSleep")
 	else:
-		Global.day += 1
-		print("Success: I sleep.")
-		Global.destination = "res://scenes/rooms/office.tscn"
-		Global.chapterNum = Global.day
-		match Global.chapterNum:
-			1:
-				Global.chapterName = "Notre-Dame"
-			2:
-				Global.chapterName = "Louvre"
-			3:
-				Global.chapterName = "Catacombs"
-		get_tree().change_scene_to_file("res://scenes/ui/coverChapter.tscn")
+		if Global.article_done == false:
+			print("Article not done")
+			Textbox.loadText("article_not_done")
+		else:
+			Global.day += 1
+			print("Success: I sleep.")
+			Global.destination = "res://scenes/rooms/office.tscn"
+			Global.chapterNum = Global.day
+			match Global.chapterNum:
+				1:
+					Global.chapterName = "Notre-Dame"
+				2:
+					Global.chapterName = "Louvre"
+				3:
+					Global.chapterName = "Catacombs"
+			get_tree().change_scene_to_file("res://scenes/ui/coverChapter.tscn")
 	

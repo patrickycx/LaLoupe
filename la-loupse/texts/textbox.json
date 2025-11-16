@@ -8,5 +8,6 @@
 	"window": ["I can see the Eiffel Tower from here. Is that why I pay too much rent?"],
 	"coffeeMug": ["Let’s not break another coffee mug. The fuel that keeps me running… literally."],
 	"trashBin": ["Three broken coffee mugs. I should throw out the trash on my way out. Tomorrow."],
-	"lateToGo": ["It is too late to go out now. I already went out today."]
+	"lateToGo": ["It is too late to go out now. I already went out today."],
+	"article_not_done": ["I should not sleep now! I should finish my work first. Go to computer!"]
 }
