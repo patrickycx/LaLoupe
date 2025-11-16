@@ -1,28 +1,28 @@
 [gd_scene load_steps=4 format=3 uid="uid://dm4340e28im5j"]
 
-[ext_resource type="Texture2D" uid="uid://m0pq3po7udd1" path="res://assests/objects/Screenshot 2025-11-14 223030.png" id="1_8f21p"]
+[ext_resource type="Texture2D" uid="uid://dumti761ip0a5" path="res://assests/characters/IMG_1380.PNG" id="1_8f21p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pfdug"]
-size = Vector2(139.5, 39)
+size = Vector2(165.75, 335.5)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_878vv"]
-radius = 313.07828
+radius = 237.05273
 
 [node name="candle" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(40.499996, 37)
-scale = Vector2(3.0249999, 0.3148148)
+position = Vector2(-6, 11.000008)
+scale = Vector2(2.8908334, 2.2124183)
 texture = ExtResource("1_8f21p")
 region_enabled = true
-region_rect = Rect2(801, 278.77838, 40.610657, 108.06525)
+region_rect = Rect2(598.3379, 609.4242, 78.02582, 153.24475)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(40, 39)
+position = Vector2(-4, 27)
 shape = SubResource("RectangleShape2D_pfdug")
 
 [node name="interaction" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="interaction"]
-position = Vector2(42, 38)
+position = Vector2(-10, 25)
 shape = SubResource("CircleShape2D_878vv")
