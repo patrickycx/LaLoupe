@@ -5,6 +5,7 @@ extends StaticBody2D
 # Import detectable component
 @onready var interactable: Area2D = $Interactable
 @onready var sprite_2d: Sprite2D = $Sprite2D
+var madeArticle = false
 
 # Detect the interaction (if E is pressed)
 func _ready() -> void:
@@ -15,8 +16,10 @@ func _on_interact():
 	
 	if (Global.day == 1):
 		if (Global.notreDame_done == true):
-			print("Was in notre dame")
-			get_tree().change_scene_to_file("res://scenes/events/article_maker.tscn")
+			if (madeArticle == false):
+				print("Was in notre dame")
+				get_tree().change_scene_to_file("res://scenes/events/article_maker.tscn")
+				madeArticle = true
 		else:
 			if Global.read_news:
 				Global.reading = "email"
@@ -24,13 +27,3 @@ func _on_interact():
 				get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
 			else:
 				Textbox.loadText("waitComputer")
-	if Global.day == 2:
-		if (Global.louvre_done == true):
-			pass
-		else:
-			pass
-	if Global.day == 3:
-		if (Global.catacombes_done == true):
-			pass
-		else:
-			pass
