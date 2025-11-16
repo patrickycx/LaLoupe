@@ -39,6 +39,7 @@ func loadText(data):
 	print("Loaded textbox file: " + data)
 	var content = JSON.parse_string(file.get_as_text())
 	text_queue = content[data]
+	print(text_queue)
 	textDisplayed = true
 	display_text()
 	print("Content saved as text_queue")
