@@ -1,57 +1,72 @@
-[gd_scene load_steps=3 format=3 uid="uid://hja07cl3142y"]
+[gd_scene load_steps=4 format=3 uid="uid://hja07cl3142y"]
 
 [ext_resource type="Script" uid="uid://cx7p4fsua18q2" path="res://scripts/events/article_maker.gd" id="1_r5sc6"]
-[ext_resource type="Texture2D" uid="uid://m0pq3po7udd1" path="res://assests/objects/Screenshot 2025-11-14 223030.png" id="2_gac0t"]
+[ext_resource type="Texture2D" uid="uid://dw0ipnydx7v32" path="res://assests/objects/office_smallBits.PNG" id="2_r5sc6"]
+
+[sub_resource type="FontFile" id="FontFile_gac0t"]
+cache/0/15/0/ascent = 0.0
+cache/0/15/0/descent = 0.0
+cache/0/15/0/underline_position = 0.0
+cache/0/15/0/underline_thickness = 0.0
+cache/0/15/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
 
 [node name="articleMaker" type="Node2D"]
+position = Vector2(292, 200)
 script = ExtResource("1_r5sc6")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 775.0
-offset_top = 21.0
-offset_right = 1074.0
-offset_bottom = 187.0
+offset_left = 796.0
+offset_top = -72.0
+offset_right = 1095.0
+offset_bottom = 94.0
 theme_override_font_sizes/normal_font_size = 20
 text = "Select between 1 to 3 secrets to include in your article for tomorrow.
 Maybe they'll even have an impact on the future..."
 
 [node name="secret1" type="Sprite2D" parent="."]
-position = Vector2(73, 251.00003)
-scale = Vector2(4.5172415, 3.512195)
-texture = ExtResource("2_gac0t")
+position = Vector2(124.000015, 112)
+scale = Vector2(1.2177767, 0.9454703)
+texture = ExtResource("2_r5sc6")
 region_enabled = true
-region_rect = Rect2(666.71655, 294.09662, 29.262817, 41.13748)
+region_rect = Rect2(43, 299, 155, 175)
 
 [node name="button2" type="Label" parent="secret1"]
-offset_left = -21.25
-offset_top = 22.0
-offset_right = 24.75
-offset_bottom = 45.0
-theme_override_font_sizes/font_size = 8
-text = "Beispieltext"
+offset_left = -111.47717
+offset_top = 87.66268
+offset_right = 155.50049
+offset_bottom = 198.70071
+theme_override_fonts/font = SubResource("FontFile_gac0t")
+theme_override_font_sizes/font_size = 15
+text = "Secret 1: I've learnt that the Tech Baron wants to build a skyscraper where the Notre_dame is standing right now"
+autowrap_mode = 2
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
-offset_left = 119.0
-offset_top = 18.0
-offset_right = 813.0
-offset_bottom = 168.0
-theme_override_font_sizes/normal_font_size = 60
+offset_left = -36.0
+offset_top = -104.0
+offset_right = 753.0
+offset_bottom = 125.0
+theme_override_font_sizes/normal_font_size = 80
 theme_override_font_sizes/bold_font_size = 40
 text = "Discovered Secrets"
 
 [node name="submit" type="Button" parent="."]
-offset_left = 459.0
-offset_top = 550.0
-offset_right = 618.0
-offset_bottom = 605.0
-theme_override_font_sizes/font_size = 30
+offset_left = 290.0
+offset_top = 618.0
+offset_right = 470.0
+offset_bottom = 684.0
+theme_override_font_sizes/font_size = 40
 text = "Submit"
 
 [node name="OptionButton" type="OptionButton" parent="."]
-offset_left = 781.0
-offset_top = 203.0
-offset_right = 1026.0
-offset_bottom = 255.0
+offset_left = 860.0
+offset_top = 200.0
+offset_right = 1110.0
+offset_bottom = 252.0
 item_count = 4
 popup/item_0/text = "Skyscraper"
 popup/item_0/id = 0
@@ -63,55 +78,44 @@ popup/item_3/text = "Culture is a relict of the past"
 popup/item_3/id = 3
 
 [node name="secret2" type="Sprite2D" parent="."]
-position = Vector2(239, 252)
-scale = Vector2(4.408035, 3.640244)
-texture = ExtResource("2_gac0t")
+position = Vector2(534.7669, 102.161224)
+scale = Vector2(1.2030077, 1.0267291)
+texture = ExtResource("2_r5sc6")
 region_enabled = true
-region_rect = Rect2(666.71655, 294.09662, 29.262817, 41.13748)
+region_rect = Rect2(43, 299, 155, 175)
 
 [node name="button2" type="Label" parent="secret2"]
-offset_left = -21.25
-offset_top = 22.0
-offset_right = 24.75
-offset_bottom = 45.0
-theme_override_font_sizes/font_size = 8
-text = "Beispieltext"
+offset_left = -98.63168
+offset_top = 96.87451
+offset_right = 158.22232
+offset_bottom = 195.20895
+theme_override_fonts/font = SubResource("FontFile_gac0t")
+theme_override_font_sizes/font_size = 15
+text = "Secret 2: I really liked what the priest said about how culture brings people together"
+autowrap_mode = 2
 
 [node name="secret3" type="Sprite2D" parent="."]
-position = Vector2(422.38, 245.0625)
-scale = Vector2(4.8013787, 3.3628054)
-texture = ExtResource("2_gac0t")
+position = Vector2(147.99998, 376.00006)
+scale = Vector2(1.1930349, 0.90970826)
+texture = ExtResource("2_r5sc6")
 region_enabled = true
-region_rect = Rect2(666.71655, 294.09662, 29.262817, 41.13748)
+region_rect = Rect2(43, 299, 155, 175)
 
 [node name="button2" type="Label" parent="secret3"]
-offset_left = -21.25
-offset_top = 22.0
-offset_right = 24.75
-offset_bottom = 45.0
-theme_override_font_sizes/font_size = 8
-text = "Beispieltext"
-
-[node name="secret3" type="Sprite2D" parent="secret3"]
-position = Vector2(35.07922, -0.2052387)
-scale = Vector2(0.99511933, 1.0360281)
-texture = ExtResource("2_gac0t")
-region_enabled = true
-region_rect = Rect2(666.71655, 294.09662, 29.262817, 41.13748)
-
-[node name="button2" type="Label" parent="secret3/secret3"]
-offset_left = -21.25
-offset_top = 22.0
-offset_right = 24.75
-offset_bottom = 45.0
-theme_override_font_sizes/font_size = 8
-text = "Beispieltext"
+offset_left = -138.5412
+offset_top = 114.987915
+offset_right = 125.11716
+offset_bottom = 237.43872
+theme_override_fonts/font = SubResource("FontFile_gac0t")
+theme_override_font_sizes/font_size = 15
+text = "Secret 3: When I saw the candle I started wondering what would happen if such a historic building as the Notre-Dame bursts out in flames..."
+autowrap_mode = 2
 
 [node name="OptionButton2" type="OptionButton" parent="."]
-offset_left = 785.0
-offset_top = 384.0
-offset_right = 1030.0
-offset_bottom = 436.0
+offset_left = 860.0
+offset_top = 376.0
+offset_right = 1110.0
+offset_bottom = 428.0
 item_count = 4
 popup/item_0/text = "Skyscraper"
 popup/item_0/id = 0
@@ -123,10 +127,10 @@ popup/item_3/text = "Culture is a relict of the past"
 popup/item_3/id = 3
 
 [node name="OptionButton3" type="OptionButton" parent="."]
-offset_left = 784.0
-offset_top = 294.0
-offset_right = 1029.0
-offset_bottom = 346.0
+offset_left = 860.0
+offset_top = 288.0
+offset_right = 1110.0
+offset_bottom = 340.0
 item_count = 4
 popup/item_0/text = "Skyscraper"
 popup/item_0/id = 0
@@ -136,6 +140,23 @@ popup/item_2/text = "Burn down Notre-Dame"
 popup/item_2/id = 2
 popup/item_3/text = "Culture is a relict of the past"
 popup/item_3/id = 3
+
+[node name="secret4" type="Sprite2D" parent="."]
+position = Vector2(540, 383.99997)
+scale = Vector2(1.159044, 0.9684421)
+texture = ExtResource("2_r5sc6")
+region_enabled = true
+region_rect = Rect2(43, 299, 155, 175)
+
+[node name="button2" type="Label" parent="secret4"]
+offset_left = -123.46454
+offset_top = 94.98804
+offset_right = 167.262
+offset_bottom = 206.02606
+theme_override_fonts/font = SubResource("FontFile_gac0t")
+theme_override_font_sizes/font_size = 15
+text = "Secret 4: Maybe the Tech Baron has a point when he says that culture is a relict of the past. Should we really look more into the future?"
+autowrap_mode = 2
 
 [connection signal="pressed" from="submit" to="." method="_on_submit_pressed"]
 [connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
