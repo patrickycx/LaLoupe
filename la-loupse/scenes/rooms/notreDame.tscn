@@ -8,9 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://dm4340e28im5j" path="res://scenes/objects/notreDame/candle.tscn" id="6_0tv0f"]
 [ext_resource type="PackedScene" uid="uid://dwvdfqp0dlm1e" path="res://scenes/objects/notreDame/window_notre_dame.tscn" id="7_jeddf"]
 [ext_resource type="PackedScene" uid="uid://cuen8xxmf6j6b" path="res://scenes/objects/notreDame/window_light_notre_dam.tscn" id="8_s2lp5"]
-[ext_resource type="PackedScene" uid="uid://dbsvfgmf043yr" path="res://scenes/objects/notreDame/columns.tscn" id="9_d5644"]
-[ext_resource type="PackedScene" uid="uid://crdj167krg0qb" path="res://scenes/diaColumn.tscn" id="10_kkilf"]
-[ext_resource type="PackedScene" uid="uid://cdjclb6wyql7m" path="res://scenes/objects/louvre/bench_notreDame.tscn" id="11_ttxgy"]
+[ext_resource type="PackedScene" path="res://scenes/objects/notreDame/columns.tscn" id="9_d5644"]
+[ext_resource type="PackedScene" path="res://scenes/diaColumn.tscn" id="10_kkilf"]
+[ext_resource type="PackedScene" path="res://scenes/objects/louvre/bench_notreDame.tscn" id="11_ttxgy"]
 [ext_resource type="AudioStream" uid="uid://bfod112qnuiiq" path="res://assests/audio/La Loup - Notre Dame 2.wav" id="12_eeba5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_25knu"]
@@ -101,7 +101,7 @@ z_index = 0
 position = Vector2(-2, 669)
 
 [node name="door" parent="." instance=ExtResource("3_3pmva")]
-position = Vector2(-148, 707)
+position = Vector2(-132, 783)
 
 [node name="NPCs" type="Node" parent="."]
 

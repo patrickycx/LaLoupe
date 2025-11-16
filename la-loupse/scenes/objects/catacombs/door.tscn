@@ -1,18 +1,19 @@
 [gd_scene load_steps=3 format=3 uid="uid://cub86vg3w3g0e"]
 
-[ext_resource type="Texture2D" uid="uid://m0pq3po7udd1" path="res://assests/objects/Screenshot 2025-11-14 223030.png" id="2_l128i"]
+[ext_resource type="Texture2D" uid="uid://dbtpu0p6t513k" path="res://assests/rooms/door_window_office.png" id="1_at8xu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g5a0r"]
-size = Vector2(64, 56)
+size = Vector2(64, 25)
 
 [node name="door" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -1)
-texture = ExtResource("2_l128i")
+scale = Vector2(0.47575757, 0.09225092)
+texture = ExtResource("1_at8xu")
 region_enabled = true
-region_rect = Rect2(247.37384, 189.70877, 63.789856, 59.93445)
+region_rect = Rect2(57, 111.5, 165, 271)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -3)
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_g5a0r")
