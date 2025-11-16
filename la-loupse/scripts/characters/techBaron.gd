@@ -85,6 +85,9 @@ func _on_timer_timeout():
 
 func _on_dialogue_d_finished() -> void:
 	print("finished")
+	Global.secrets.erase("skyscraper")
+	Global.secrets.erase("culture")
+	print(Global.secrets)
 	is_chatting = false
 	is_roaming = true
 	Global.player_can_move = true
