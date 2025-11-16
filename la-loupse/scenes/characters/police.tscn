@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpgr20vbd48d"]
+
+[ext_resource type="Texture2D" uid="uid://dumti761ip0a5" path="res://assests/characters/IMG_1380.PNG" id="1_dlqe3"]
+[ext_resource type="PackedScene" uid="uid://cgi1ackepfh0b" path="res://scenes/events/dialogue.tscn" id="2_ncw5p"]
+
+[node name="police" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dlqe3")
+region_enabled = true
+region_rect = Rect2(335, 257, 96, 253)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="INteractionArea" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="INteractionArea"]
+
+[node name="Dialogue" parent="." instance=ExtResource("2_ncw5p")]
+offset_left = -48.0
+offset_top = -452.0
+offset_right = -8.0
+offset_bottom = -412.0
