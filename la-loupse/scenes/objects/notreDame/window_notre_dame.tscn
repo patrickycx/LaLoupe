@@ -1,8 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://dwvdfqp0dlm1e"]
 
-[ext_resource type="Texture2D" uid="uid://c0nbonpmiy3p6" path="res://assests/objects/window_light.png" id="1_m6jm1"]
+[ext_resource type="Texture2D" uid="uid://bnei3l15qtdbg" path="res://assests/rooms/window all.png" id="1_m6jm1"]
 
 [node name="window_notre_dame" type="StaticBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(9, 188)
 texture = ExtResource("1_m6jm1")

@@ -44,12 +44,11 @@ func _process(delta):
 		if Input.is_action_just_pressed("interaction"):
 			if Global.chatted_to_priest == 0:
 				Global.chatted_to_priest += 1
+				Global.secrets.erase("priest")
+				print(Global.secrets)
 				$Dialogue.start("priest")
-				print(Global.chatted_to_priest)
 				is_roaming = false
 				is_chatting = true
-				$AnimatedSprite2D.play("idle")
-				Global.player_can_move = false
 
 
 func choose(array):
@@ -83,3 +82,4 @@ func _on_dialogue_d_finished() -> void:
 	is_chatting = false
 	is_roaming = true
 	Global.player_can_move = true
+	

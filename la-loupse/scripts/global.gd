@@ -38,6 +38,5 @@ var secrets = [
 	"skyscraper", # secret negative
 	"culture",
 	"priest", # secret positive
-	"candle", 
-	"askIndirectly", #secret positive
+	"candle",  #secret positive
 ]

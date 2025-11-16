@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuen8xxmf6j6b"]
+
+[ext_resource type="Texture2D" uid="uid://v0s5shmtwgdb" path="res://assests/rooms/window_light.png" id="1_ysm3l"]
+
+[node name="windowLight_notreDam" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 51)
+scale = Vector2(1, 1.3984375)
+texture = ExtResource("1_ysm3l")

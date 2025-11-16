@@ -13,6 +13,10 @@ func _ready() -> void:
 # What will happen after pressing E
 func _on_interact():
 	Global.finished.append("notreDameScene")
-	print("Success: I go back to my room.")
-	get_tree().change_scene_to_file("res://scenes/rooms/office.tscn")
+	if Global.secrets.is_empty():
+		print("Success: I go back to my room.")
+		get_tree().change_scene_to_file("res://scenes/rooms/office.tscn")
+	else:
+		#TODO "I should look around a little more"
+		pass
 	
