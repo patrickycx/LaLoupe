@@ -32,3 +32,12 @@ var catacombes_done = false
 ## Office tasks
 var read_news = false
 var read_email = false
+
+## Secrets
+var secrets = [
+	"skyscraper", # secret negative
+	"culture",
+	"priest", # secret positive
+	"candle", 
+	"askIndirectly", #secret positive
+]
