@@ -46,16 +46,14 @@ func _process(_delta):
 		if Input.is_action_just_pressed("interaction"):
 			if Global.chatted_to_techBaron == 0:
 				Global.chatted_to_techBaron += 1
-				$Dialogue.start("techBaron")
-				$AnimatedSprite2D.play("idle")
-				Global.player_can_move = false
-				print(Global.secretsFound)
-				print(Global.outcomeCompass)
+				$Dialogue.start("techBaron", Global.chatted_to_techBaron)
 				Global.secretsFound += 1
-				print(Global.secretsFound)
-				Global.outcomeCompass -= 2
-				print(Global.outcomeCompass)
+				## TODO implement add secrets to an array
 				Global.notreDame_done = true
+			elif Global.chatted_to_techBaron == 1:
+				Global.chatted_to_techBaron += 1
+				$Dialogue.start("techBaron", Global.chatted_to_techBaron)
+				Global.secretsFound += 1		
 			
 
 func choose(array):
