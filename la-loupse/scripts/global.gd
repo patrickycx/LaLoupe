@@ -7,6 +7,8 @@ var chapterNum: int = 1
 var chapterName = "Notre-Dame"
 var destination = ""
 var player_can_move = true  # so the he cant move while talking
+var reading = ""
+
 
 ## Secrets und so
 var secretsFound = 0
@@ -25,3 +27,8 @@ var chatted_to_cat = 0
 var notreDame_done = false
 var louvre_done = false
 var catacombes_done = false
+
+
+## Office tasks
+var read_news = false
+var read_email = false

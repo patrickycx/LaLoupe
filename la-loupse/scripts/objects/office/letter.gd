@@ -18,9 +18,15 @@ func _ready() -> void:
 
 func receiveNews(day, finished):
 	return not (day == 1 and "notreDameScene" in finished) or (day == 2 and "louvreScene" in finished) or (day == 3 and "catacombsScene"  in finished) or "readNews" in finished or "readNote" in finished or "readInvitation" in finished
-	
 
 # What will happen after pressing E
 func _on_interact():
-	# TODO
-	print("Success: I read the letter.")
+	match Global.day:
+		1:
+			Global.reading = "newspaper"
+			get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
+		2:
+			pass
+		3:
+			pass
+	print("Success: I read.")
