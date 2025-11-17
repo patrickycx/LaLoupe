@@ -39,6 +39,8 @@ func _process(delta):
 			MOVE: 
 				pass
 	# Interaction
+	
+func _process(_delta):
 	if player_in_chat_zone:
 		if Input.is_action_just_pressed("interaction"):
 			if Global.chatted_with_XXX = 0:
