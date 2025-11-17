@@ -24,6 +24,6 @@ func _on_interact():
 			if Global.read_news:
 				Global.reading = "email"
 				Global.read_email = true
-				get_tree().change_scene_to_file("res://scenes/events/newspaper.tscn")
+				get_tree().change_scene_to_file("res://scenes/events/email.tscn")
 			else:
 				Textbox.loadText("waitComputer")
