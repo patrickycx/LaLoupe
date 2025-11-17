@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dpgr20vbd48d"]
 
-[ext_resource type="Texture2D" uid="uid://dumti761ip0a5" path="res://assests/characters/IMG_1380.PNG" id="1_dlqe3"]
+[ext_resource type="Texture2D" uid="uid://dumti761ip0a5" path="res://assests/characters/candle.PNG" id="1_dlqe3"]
 [ext_resource type="Script" uid="uid://r044qa1qmgfo" path="res://scripts/characters/police.gd" id="1_ncw5p"]
 [ext_resource type="PackedScene" uid="uid://cgi1ackepfh0b" path="res://scenes/events/dialogue.tscn" id="2_ncw5p"]
 

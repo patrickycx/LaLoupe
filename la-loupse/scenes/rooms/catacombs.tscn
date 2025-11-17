@@ -45,57 +45,9 @@ layer_0/tile_data = PackedInt32Array(-720912, 1769474, 16, -655376, 1769474, 16,
 z_index = 0
 position = Vector2(-193, 315)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("3_2av0g")]
-position = Vector2(-216, -1817)
+[node name="activist" parent="." instance=ExtResource("3_2av0g")]
+position = Vector2(-211, -1812)
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_4yftd")
-
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_left = 50.0
-offset_top = -1848.0
-offset_right = 646.0
-offset_bottom = -1525.0
-color = Color(0.34781694, 0.34781697, 0.3478169, 1)
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-z_index = 10
-offset_left = 76.0
-offset_top = -1834.0
-offset_right = 627.0
-offset_bottom = -1547.0
-text = "Jeeean… follow the echo… I’m waiting…
-Jean! This way! I mean no harm—come closer!
-Jean: Uh… hello? Who’s there? Show yourself! I promise I don’t bite… much.
-
-(Activist appears)
-
-Jean: Alright… this is getting stranger by the minute. Who are you?
-
-Activist: I am a Custodian. A guardian of Paris’ forgotten culture.
-
-Jean: A Custodian… okay. And your cause?
-
-Activist: To remind the people of Paris that their culture is alive. That art, history, and heritage matter… even when others ignore it.
-
-Jean: So… taking the Mona Lisa wasn’t theft for profit, it was… to make people care again?
-
-Activist: Exactly. Sometimes only a small shock can wake a city from indifference.
-
-Jean: I see… It’s not just a story for headlines. It’s a story about reminding the city of its soul.
-
-Activist: Tell it well, Jean. Make sure the message isn’t lost.
-
-Jean: Understood. I’ll write the story of those who fight for what truly matters… even from the shadows.
-
-(Activist disappears)
-
-Jean: Sometimes, the loudest messages come from the quietest voices…
-
-	Against all odds, Jean's investigation reignited something long forgotten.
-Paris has found its voice again—its love for art, history, and the quiet beauty that binds its people.
-Thanks to Jeans work, the city remembers what truly matters.
-
-You saved Parisian culture.
-Thank you for listening when others chose silence.
-"
+autoplay = true

@@ -1,9 +1,9 @@
 [gd_scene load_steps=20 format=3 uid="uid://beqha1apdm5l8"]
 
 [ext_resource type="Script" uid="uid://b1dpgk4jspk2c" path="res://scripts/characters/player.gd" id="1_yewv4"]
-[ext_resource type="Texture2D" uid="uid://bd03sbuit3wvr" path="res://assests/characters/Better-idle.png" id="2_dyp2m"]
+[ext_resource type="Texture2D" uid="uid://bd03sbuit3wvr" path="res://assests/characters/player_idle.png" id="2_dyp2m"]
 [ext_resource type="PackedScene" uid="uid://ixubhjmyq60r" path="res://components/interaction_component/interacting_component.tscn" id="3_76oj4"]
-[ext_resource type="Texture2D" uid="uid://s07tu27xvck8" path="res://assests/characters/walk.PNG" id="3_dyp2m"]
+[ext_resource type="Texture2D" uid="uid://s07tu27xvck8" path="res://assests/characters/player_walk.PNG" id="3_dyp2m"]
 [ext_resource type="PackedScene" uid="uid://cgi1ackepfh0b" path="res://scenes/events/dialogue.tscn" id="5_atpat"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_atpat"]

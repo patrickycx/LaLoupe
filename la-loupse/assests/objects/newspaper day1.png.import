@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qkct7xr2rpk6"
-path="res://.godot/imported/Screenshot 2025-11-17 134244.png-62a2c7a08d33478f43d32b2db501c862.ctex"
+uid="uid://dxfex3xu36qwk"
+path="res://.godot/imported/newspaper day1.png-05750b793b1cd214ccd02db83dd77f9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/events/Screenshot 2025-11-17 134244.png"
-dest_files=["res://.godot/imported/Screenshot 2025-11-17 134244.png-62a2c7a08d33478f43d32b2db501c862.ctex"]
+source_file="res://assests/objects/newspaper day1.png"
+dest_files=["res://.godot/imported/newspaper day1.png-05750b793b1cd214ccd02db83dd77f9d.ctex"]
 
 [params]
 

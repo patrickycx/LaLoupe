@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bccsl4s7j581h" path="res://scripts/events/rich_text_label.gd" id="1_ed042"]
 [ext_resource type="Script" uid="uid://clyt5iusiyktg" path="res://scripts/events/newspaper.gd" id="1_gj4wk"]
-[ext_resource type="Texture2D" uid="uid://dxfex3xu36qwk" path="res://assests/objects/Screenshot 2025-11-17 134244.png" id="3_8g1ta"]
+[ext_resource type="Texture2D" uid="uid://dxfex3xu36qwk" path="res://assests/objects/newspaper day1.png" id="3_8g1ta"]
 
 [node name="Newspaper" type="Node2D"]
 script = ExtResource("1_gj4wk")

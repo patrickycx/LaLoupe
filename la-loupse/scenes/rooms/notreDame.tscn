@@ -8,9 +8,9 @@
 [ext_resource type="PackedScene" uid="uid://dm4340e28im5j" path="res://scenes/objects/notreDame/candle.tscn" id="6_0tv0f"]
 [ext_resource type="PackedScene" uid="uid://dwvdfqp0dlm1e" path="res://scenes/objects/notreDame/window_notre_dame.tscn" id="7_jeddf"]
 [ext_resource type="PackedScene" uid="uid://cuen8xxmf6j6b" path="res://scenes/objects/notreDame/window_light_notre_dam.tscn" id="8_s2lp5"]
-[ext_resource type="PackedScene" path="res://scenes/objects/notreDame/columns.tscn" id="9_d5644"]
-[ext_resource type="PackedScene" path="res://scenes/diaColumn.tscn" id="10_kkilf"]
-[ext_resource type="PackedScene" path="res://scenes/objects/louvre/bench_notreDame.tscn" id="11_ttxgy"]
+[ext_resource type="PackedScene" uid="uid://dbsvfgmf043yr" path="res://scenes/objects/notreDame/columns.tscn" id="9_d5644"]
+[ext_resource type="PackedScene" uid="uid://crdj167krg0qb" path="res://scenes/objects/notreDame/diaColumn.tscn" id="10_kkilf"]
+[ext_resource type="PackedScene" uid="uid://cdjclb6wyql7m" path="res://scenes/objects/notreDame/bench_notreDame.tscn" id="11_ttxgy"]
 [ext_resource type="AudioStream" uid="uid://bfod112qnuiiq" path="res://assests/audio/La Loup - Notre Dame 2.wav" id="12_eeba5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_25knu"]
@@ -103,6 +103,9 @@ position = Vector2(-2, 669)
 [node name="door" parent="." instance=ExtResource("3_3pmva")]
 position = Vector2(-132, 783)
 
+[node name="candle" parent="." instance=ExtResource("6_0tv0f")]
+position = Vector2(-515, -908)
+
 [node name="NPCs" type="Node" parent="."]
 
 [node name="priest" parent="NPCs" instance=ExtResource("5_ki8l3")]
@@ -111,36 +114,6 @@ scale = Vector2(0.9, 0.9)
 
 [node name="techBaron" parent="NPCs" instance=ExtResource("4_25knu")]
 position = Vector2(411, -3)
-
-[node name="StaticBody2D" parent="." instance=ExtResource("6_0tv0f")]
-position = Vector2(-515, -908)
-
-[node name="columns" parent="." instance=ExtResource("9_d5644")]
-position = Vector2(126, -448)
-
-[node name="columns2" parent="." instance=ExtResource("9_d5644")]
-position = Vector2(-512, -451)
-
-[node name="columns3" parent="." instance=ExtResource("9_d5644")]
-position = Vector2(129, -192)
-
-[node name="columns4" parent="." instance=ExtResource("9_d5644")]
-position = Vector2(-519, -192)
-
-[node name="StaticBody2D2" parent="." instance=ExtResource("10_kkilf")]
-position = Vector2(-1022, 127)
-
-[node name="StaticBody2D3" parent="." instance=ExtResource("10_kkilf")]
-position = Vector2(-1028, -643)
-
-[node name="StaticBody2D4" parent="." instance=ExtResource("10_kkilf")]
-position = Vector2(-1025, -513)
-
-[node name="StaticBody2D5" parent="." instance=ExtResource("10_kkilf")]
-position = Vector2(-1026, -1214)
-
-[node name="window_notre_dame2" parent="." instance=ExtResource("7_jeddf")]
-position = Vector2(-1248, -65)
 
 [node name="windows" type="Node2D" parent="."]
 
@@ -153,7 +126,22 @@ position = Vector2(-53, 321)
 [node name="window_notre_dame" parent="windows" instance=ExtResource("7_jeddf")]
 position = Vector2(-1258, -804)
 
+[node name="window_notre_dame2" parent="windows" instance=ExtResource("7_jeddf")]
+position = Vector2(-1248, -65)
+
 [node name="benches" type="Node2D" parent="."]
+
+[node name="bench" parent="benches" instance=ExtResource("11_ttxgy")]
+position = Vector2(-313, 16)
+
+[node name="bench2" parent="benches" instance=ExtResource("11_ttxgy")]
+position = Vector2(-307, -124)
+
+[node name="bench3" parent="benches" instance=ExtResource("11_ttxgy")]
+position = Vector2(-302, -258)
+
+[node name="bench4" parent="benches" instance=ExtResource("11_ttxgy")]
+position = Vector2(-295, -492)
 
 [node name="bench5" parent="benches" instance=ExtResource("11_ttxgy")]
 position = Vector2(-295, -629)
@@ -161,17 +149,31 @@ position = Vector2(-295, -629)
 [node name="bench6" parent="benches" instance=ExtResource("11_ttxgy")]
 position = Vector2(-295, -765)
 
-[node name="bench4" parent="benches" instance=ExtResource("11_ttxgy")]
-position = Vector2(-295, -492)
+[node name="columns" type="Node2D" parent="."]
+position = Vector2(-1026, -1214)
 
-[node name="bench3" parent="benches" instance=ExtResource("11_ttxgy")]
-position = Vector2(-302, -258)
+[node name="DiaColumn1" parent="columns" instance=ExtResource("10_kkilf")]
+position = Vector2(4, 1341)
 
-[node name="bench2" parent="benches" instance=ExtResource("11_ttxgy")]
-position = Vector2(-307, -124)
+[node name="DiaColumn2" parent="columns" instance=ExtResource("10_kkilf")]
+position = Vector2(-2, 571)
 
-[node name="bench" parent="benches" instance=ExtResource("11_ttxgy")]
-position = Vector2(-313, 16)
+[node name="columns" parent="columns" instance=ExtResource("9_d5644")]
+position = Vector2(1152, 766)
+
+[node name="columns2" parent="columns" instance=ExtResource("9_d5644")]
+position = Vector2(514, 763)
+
+[node name="columns3" parent="columns" instance=ExtResource("9_d5644")]
+position = Vector2(1155, 1022)
+
+[node name="columns4" parent="columns" instance=ExtResource("9_d5644")]
+position = Vector2(507, 1022)
+
+[node name="DiaColumn3" parent="columns" instance=ExtResource("10_kkilf")]
+position = Vector2(1, 701)
+
+[node name="DiaColumn4" parent="columns" instance=ExtResource("10_kkilf")]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_eeba5")

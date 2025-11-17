@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://c2rnefpt5tmdn"]
 
-[ext_resource type="Texture2D" uid="uid://bgjs5fyli0hvp" path="res://assests/rooms/tiles.png" id="1_ysiyx"]
+[ext_resource type="Texture2D" uid="uid://bgjs5fyli0hvp" path="res://assests/rooms/playceholder_tiles.png" id="1_ysiyx"]
 [ext_resource type="PackedScene" uid="uid://beqha1apdm5l8" path="res://scenes/characters/player.tscn" id="2_1j04t"]
 [ext_resource type="PackedScene" uid="uid://3kx8ulhkdscq" path="res://scenes/objects/office/pc.tscn" id="3_afhtq"]
 [ext_resource type="PackedScene" uid="uid://cleoyki7orac0" path="res://scenes/objects/office/bed.tscn" id="4_afhtq"]
