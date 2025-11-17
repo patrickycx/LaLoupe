@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://lpuxt63eui2a" path="res://scenes/objects/louvre/door.tscn" id="3_5xfda"]
 [ext_resource type="PackedScene" uid="uid://dpgr20vbd48d" path="res://scenes/characters/police.tscn" id="4_73m4l"]
 [ext_resource type="PackedScene" uid="uid://bulg5h4m1rlbh" path="res://scenes/objects/louvre/bench.tscn" id="5_t82xp"]
-[ext_resource type="Script" uid="uid://cecafdndh6jxa" path="res://scenes/rooms/audio_stream_player_2d.gd" id="7_gkc87"]
+[ext_resource type="Script" uid="uid://cecafdndh6jxa" path="res://scripts/events/play_Mona_Lisa_stolen.gd" id="7_gkc87"]
 [ext_resource type="AudioStream" uid="uid://catkomog2be2y" path="res://assests/audio/La Loup - Diebstahl 2.wav" id="7_rs4oq"]
 [ext_resource type="PackedScene" uid="uid://4jk1kmmpvhkb" path="res://scenes/characters/techBaron.tscn" id="8_gkc87"]
 [ext_resource type="PackedScene" uid="uid://cgi1ackepfh0b" path="res://scenes/events/dialogue.tscn" id="9_yvxvn"]

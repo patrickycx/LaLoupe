@@ -3,7 +3,6 @@ extends CharacterBody2D
 const speed = 100.0
 var current_state = 0
 
-var dir = Vector2.RIGHT
 var start_pos
 
 var is_roaming = true
@@ -21,7 +20,6 @@ enum {
 func _ready():
 	randomize()
 	start_pos = position
-	$Timer.start()
 
 
 func _process(delta):
@@ -37,9 +35,9 @@ func _process(delta):
 			IDLE:
 				pass
 			NEW_DIR:
-				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
+				pass
 			MOVE: 
-				move(delta)
+				pass
 	# Interaction
 	if player_in_chat_zone:
 		if Input.is_action_just_pressed("interaction"):
@@ -51,16 +49,6 @@ func _process(delta):
 				$AnimatedSprite2D.play("idle")
 
 
-func choose(array):
-	array.shuffle()
-	return array.front()
-
-
-func move(delta):
-	if !is_chatting:
-		position += dir * speed * delta
-
-
 func _on_chat_detection_area_body_entered(body: Node2D) -> void:
 	if body.name == "player":        
 		player = body
@@ -70,13 +58,6 @@ func _on_chat_detection_area_body_entered(body: Node2D) -> void:
 func _on_chat_detection_area_body_exited(body: Node2D) -> void:
 	if body.name == "player":        
 		player_in_chat_zone = false
-
-
-func _on_timer_timeout():
-	$Timer.wait_time = choose([0.5, 1, 1.5])
-	$Timer.start()   
-	current_state = choose([IDLE, NEW_DIR, MOVE])
-
 
 func _on_dialogue_d_finished() -> void:
 	is_chatting = false
