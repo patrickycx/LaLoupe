@@ -28,23 +28,23 @@ func _ready():
 			IDLE:
 				pass
 			NEW_DIR:
-				dir = choose([Vector2.RIGHT, Vector2.UP, Vector2.LEFT, Vector2.DOWN])
+				pass
 			MOVE: 
 				pass
+	
+func _process(_delta):
 	# Interaction
 	if player_in_chat_zone:
 		if Input.is_action_just_pressed("interaction"):
 			if Global.chatted_to_robot == 0:
 				Global.chatted_to_robot += 1
-				$Dialogue.start()
 				Global.ending = "You have reached the end of the story. Culture has faded."
 				Global.endingline2 = "The machines advance. And Paris… no longer remembers itself."
 				is_roaming = false
 				is_chatting = true
-				$AnimatedSprite2D.play("idle")
-				get_tree().change_scene_to_file("res://scenes/ui/endScene.tscn")
+				get_tree().change_scene_to_file("res://scenes/ui/endDialogue.tscn")
 
-
+	
 func choose(array):
 	array.shuffle()
 	return array.front()

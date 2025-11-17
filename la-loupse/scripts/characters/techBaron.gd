@@ -48,9 +48,6 @@ func _process(_delta):
 				$Dialogue.start("techBaron", Global.chatted_to_techBaron)
 				## TODO implement add secrets to an array
 				Global.notreDame_done = true
-			elif Global.chatted_to_techBaron == 1:
-				Global.chatted_to_techBaron += 1
-				$Dialogue.start("techBaron", Global.chatted_to_techBaron)
 			
 
 func choose(array):
