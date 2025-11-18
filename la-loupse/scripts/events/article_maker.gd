@@ -27,8 +27,13 @@ func _on_option_button_3_item_selected(index: int) -> void:
 
 func _on_submit_pressed():
 	if oneSelected == true:
-		get_tree().change_scene_to_file("res://scenes/rooms/office.tscn")
 		Global.article_done = true
 		Global.outcomeCompass_firstDay = sum
+		print(sum)
+		if sum >= 0:
+			Global.endingDialogue = "good"
+		print(Global.endingDialogue)
 		print(Global.outcomeCompass_firstDay)
+		get_tree().change_scene_to_file("res://scenes/rooms/office.tscn")
+		
 	
