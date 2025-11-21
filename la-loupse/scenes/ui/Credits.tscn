@@ -21,7 +21,7 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -352.0
-offset_top = -218.0
+offset_top = -249.0
 offset_right = 352.0
 offset_bottom = 173.5
 grow_horizontal = 2
@@ -34,7 +34,7 @@ Dialogue					Edgar Rommel
 Graphics					Andreas Niederreiter, Jonas Deller
 Programming		Katharina Hamman, Chuxuan Ye
 Trailer						Edgar Rommel
-Sound						Jens XY, Leo
+Sound						Jens Haag, Leo S.
 Game engine	Godot
 
 Special thanks to the organisers of the Graveler Game Festival and the Franco-German Institute!"
