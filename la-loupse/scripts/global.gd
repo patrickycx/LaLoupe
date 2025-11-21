@@ -46,3 +46,5 @@ var secrets = [
 
 var ending = ""
 var endingline2 = ""
+
+var endingDialogue = ""

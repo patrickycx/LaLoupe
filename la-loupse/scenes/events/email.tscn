@@ -1,11 +1,11 @@
-[gd_scene load_steps=4 format=3 uid="uid://ikus4dbkm8mf"]
+[gd_scene load_steps=4 format=3 uid="uid://cj776uu3rca6b"]
 
-[ext_resource type="Script" uid="uid://bccsl4s7j581h" path="res://scripts/events/rich_text_label.gd" id="1_ed042"]
-[ext_resource type="Script" uid="uid://clyt5iusiyktg" path="res://scripts/events/newspaper.gd" id="1_gj4wk"]
-[ext_resource type="Texture2D" uid="uid://dxfex3xu36qwk" path="res://assests/objects/newspaper day1.png" id="3_8g1ta"]
+[ext_resource type="Script" uid="uid://clyt5iusiyktg" path="res://scripts/events/newspaper.gd" id="1_fo1ly"]
+[ext_resource type="Script" uid="uid://bccsl4s7j581h" path="res://scripts/events/rich_text_label.gd" id="2_bdqmh"]
+[ext_resource type="Texture2D" uid="uid://cl0hbcs5p8wtm" path="res://assests/objects/email.png" id="3_fo1ly"]
 
 [node name="Newspaper" type="Node2D"]
-script = ExtResource("1_gj4wk")
+script = ExtResource("1_fo1ly")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 offset_left = 191.0
@@ -14,7 +14,7 @@ offset_right = 971.0
 offset_bottom = 516.0
 size_flags_horizontal = 4
 theme_override_font_sizes/normal_font_size = 22
-script = ExtResource("1_ed042")
+script = ExtResource("2_bdqmh")
 metadata/_edit_use_anchors_ = true
 
 [node name="Return" type="Button" parent="."]
@@ -30,6 +30,6 @@ metadata/_edit_use_anchors_ = true
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(586, 297)
 scale = Vector2(1.0778332, 1.1365795)
-texture = ExtResource("3_8g1ta")
+texture = ExtResource("3_fo1ly")
 
 [connection signal="pressed" from="Return" to="." method="_on_return_pressed"]

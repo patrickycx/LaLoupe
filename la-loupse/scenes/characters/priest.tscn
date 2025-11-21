@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://c47aag05pmo8p"]
 
 [ext_resource type="Script" uid="uid://co0p4runek2xo" path="res://scripts/characters/priest.gd" id="1_fcsr2"]
-[ext_resource type="Texture2D" uid="uid://dumti761ip0a5" path="res://assests/characters/IMG_1380.PNG" id="2_fcsr2"]
+[ext_resource type="Texture2D" uid="uid://dumti761ip0a5" path="res://assests/characters/candle.PNG" id="2_fcsr2"]
 [ext_resource type="PackedScene" uid="uid://cgi1ackepfh0b" path="res://scenes/events/dialogue.tscn" id="3_4j82j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ixfe5"]

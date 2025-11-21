@@ -10,7 +10,6 @@ func _on_option_button_item_selected(index: int) -> void:
 		1: sum += 3
 		2: sum += 0
 		3: sum -= 3
-		4: sum -= 1
 
 func _on_option_button_2_item_selected(index: int) -> void:
 	match index:
@@ -18,7 +17,6 @@ func _on_option_button_2_item_selected(index: int) -> void:
 		1: sum += 3
 		2: sum += 0
 		3: sum -= 3
-		4: sum -= 1
 
 func _on_option_button_3_item_selected(index: int) -> void:
 	match index:
@@ -26,13 +24,16 @@ func _on_option_button_3_item_selected(index: int) -> void:
 		1: sum += 3
 		2: sum += 0
 		3: sum -= 3
-		4: sum -= 1
 
 func _on_submit_pressed():
 	if oneSelected == true:
-		print(sum)
-		get_tree().change_scene_to_file("res://scenes/rooms/office.tscn")
 		Global.article_done = true
 		Global.outcomeCompass_firstDay = sum
+		print(sum)
+		if sum >= 0:
+			Global.endingDialogue = "good"
+		print(Global.endingDialogue)
 		print(Global.outcomeCompass_firstDay)
+		get_tree().change_scene_to_file("res://scenes/rooms/office.tscn")
+		
 	

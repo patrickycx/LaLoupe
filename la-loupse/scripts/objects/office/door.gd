@@ -28,7 +28,11 @@ func _on_interact():
 			Global.louvre_done = true
 			get_tree().change_scene_to_file("res://scenes/rooms/louvre.tscn")
 		3:
-			print("Direction: Catacombs.")
-			Global.catacombes_done = true
-			get_tree().change_scene_to_file("res://scenes/rooms/catacombs.tscn")
-	
+			if Global.endingDialogue == "good":
+				print("Direction: Catacombs.")
+				Global.catacombes_done = true
+				get_tree().change_scene_to_file("res://scenes/rooms/catacombs.tscn")
+			else:
+				print("Direction: Catacombs.")
+				Global.catacombes_done = true
+				get_tree().change_scene_to_file("res://scenes/rooms/catacombs2.tscn")

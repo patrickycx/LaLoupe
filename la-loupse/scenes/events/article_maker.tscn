@@ -28,23 +28,6 @@ theme_override_font_sizes/normal_font_size = 20
 text = "Select between 1 to 3 secrets to include in your article for tomorrow.
 Maybe they'll even have an impact on the future..."
 
-[node name="secret1" type="Sprite2D" parent="."]
-position = Vector2(124.000015, 112)
-scale = Vector2(1.2177767, 0.9454703)
-texture = ExtResource("2_r5sc6")
-region_enabled = true
-region_rect = Rect2(43, 299, 155, 175)
-
-[node name="button2" type="Label" parent="secret1"]
-offset_left = -111.47717
-offset_top = 87.66268
-offset_right = 155.50049
-offset_bottom = 198.70071
-theme_override_fonts/font = SubResource("FontFile_gac0t")
-theme_override_font_sizes/font_size = 15
-text = "Secret 1: I've learnt that the Tech Baron wants to build a skyscraper where the Notre_dame is standing right now"
-autowrap_mode = 2
-
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 offset_left = -36.0
 offset_top = -104.0
@@ -54,28 +37,22 @@ theme_override_font_sizes/normal_font_size = 80
 theme_override_font_sizes/bold_font_size = 40
 text = "Discovered Secrets"
 
-[node name="submit" type="Button" parent="."]
-offset_left = 290.0
-offset_top = 618.0
-offset_right = 470.0
-offset_bottom = 684.0
-theme_override_font_sizes/font_size = 40
-text = "Submit"
+[node name="secret1" type="Sprite2D" parent="."]
+position = Vector2(124, 112)
+scale = Vector2(1.2177767, 0.9454703)
+texture = ExtResource("2_r5sc6")
+region_enabled = true
+region_rect = Rect2(43, 299, 155, 175)
 
-[node name="OptionButton" type="OptionButton" parent="."]
-offset_left = 860.0
-offset_top = 200.0
-offset_right = 1110.0
-offset_bottom = 252.0
-item_count = 4
-popup/item_0/text = "Skyscraper"
-popup/item_0/id = 0
-popup/item_1/text = "Culture connects people"
-popup/item_1/id = 1
-popup/item_2/text = "Burn down Notre-Dame"
-popup/item_2/id = 2
-popup/item_3/text = "Culture is a relict of the past"
-popup/item_3/id = 3
+[node name="secret1" type="Label" parent="secret1"]
+offset_left = -111.47717
+offset_top = 87.66268
+offset_right = 155.50049
+offset_bottom = 198.70071
+theme_override_fonts/font = SubResource("FontFile_gac0t")
+theme_override_font_sizes/font_size = 15
+text = "Secret 1: I've learnt that the Tech Baron wants to build a skyscraper where the Louvre is standing right now"
+autowrap_mode = 2
 
 [node name="secret2" type="Sprite2D" parent="."]
 position = Vector2(534.7669, 102.161224)
@@ -84,7 +61,7 @@ texture = ExtResource("2_r5sc6")
 region_enabled = true
 region_rect = Rect2(43, 299, 155, 175)
 
-[node name="button2" type="Label" parent="secret2"]
+[node name="secret2" type="Label" parent="secret2"]
 offset_left = -98.63168
 offset_top = 96.87451
 offset_right = 158.22232
@@ -101,7 +78,7 @@ texture = ExtResource("2_r5sc6")
 region_enabled = true
 region_rect = Rect2(43, 299, 155, 175)
 
-[node name="button2" type="Label" parent="secret3"]
+[node name="secret3" type="Label" parent="secret3"]
 offset_left = -138.5412
 offset_top = 114.987915
 offset_right = 125.11716
@@ -110,6 +87,38 @@ theme_override_fonts/font = SubResource("FontFile_gac0t")
 theme_override_font_sizes/font_size = 15
 text = "Secret 3: When I saw the candle I started wondering what would happen if such a historic building as the Notre-Dame bursts out in flames..."
 autowrap_mode = 2
+
+[node name="secret4" type="Sprite2D" parent="."]
+position = Vector2(540, 384)
+scale = Vector2(1.159044, 0.9684421)
+texture = ExtResource("2_r5sc6")
+region_enabled = true
+region_rect = Rect2(43, 299, 155, 175)
+
+[node name="secret4" type="Label" parent="secret4"]
+offset_left = -123.46454
+offset_top = 94.98804
+offset_right = 167.262
+offset_bottom = 206.02606
+theme_override_fonts/font = SubResource("FontFile_gac0t")
+theme_override_font_sizes/font_size = 15
+text = "Secret 4: Maybe the Tech Baron has a point when he says that culture is a relict of the past. Should we really look more into the future?"
+autowrap_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="."]
+offset_left = 860.0
+offset_top = 200.0
+offset_right = 1110.0
+offset_bottom = 252.0
+item_count = 4
+popup/item_0/text = "Skyscraper"
+popup/item_0/id = 0
+popup/item_1/text = "Culture connects people"
+popup/item_1/id = 1
+popup/item_2/text = "Burn down Notre-Dame"
+popup/item_2/id = 2
+popup/item_3/text = "Culture is a relict of the past"
+popup/item_3/id = 3
 
 [node name="OptionButton2" type="OptionButton" parent="."]
 offset_left = 860.0
@@ -141,24 +150,15 @@ popup/item_2/id = 2
 popup/item_3/text = "Culture is a relict of the past"
 popup/item_3/id = 3
 
-[node name="secret4" type="Sprite2D" parent="."]
-position = Vector2(540, 383.99997)
-scale = Vector2(1.159044, 0.9684421)
-texture = ExtResource("2_r5sc6")
-region_enabled = true
-region_rect = Rect2(43, 299, 155, 175)
+[node name="submit" type="Button" parent="."]
+offset_left = 290.0
+offset_top = 618.0
+offset_right = 470.0
+offset_bottom = 684.0
+theme_override_font_sizes/font_size = 40
+text = "Submit"
 
-[node name="button2" type="Label" parent="secret4"]
-offset_left = -123.46454
-offset_top = 94.98804
-offset_right = 167.262
-offset_bottom = 206.02606
-theme_override_fonts/font = SubResource("FontFile_gac0t")
-theme_override_font_sizes/font_size = 15
-text = "Secret 4: Maybe the Tech Baron has a point when he says that culture is a relict of the past. Should we really look more into the future?"
-autowrap_mode = 2
-
-[connection signal="pressed" from="submit" to="." method="_on_submit_pressed"]
 [connection signal="item_selected" from="OptionButton" to="." method="_on_option_button_item_selected"]
 [connection signal="item_selected" from="OptionButton2" to="." method="_on_option_button_2_item_selected"]
 [connection signal="item_selected" from="OptionButton3" to="." method="_on_option_button_3_item_selected"]
+[connection signal="pressed" from="submit" to="." method="_on_submit_pressed"]

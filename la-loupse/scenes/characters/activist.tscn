@@ -8,7 +8,7 @@
 size = Vector2(101, 219.5)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eokcd"]
-radius = 172.05232
+radius = 192.0
 
 [node name="activist" type="CharacterBody2D"]
 script = ExtResource("1_wno3q")
@@ -22,9 +22,9 @@ region_rect = Rect2(295, 256, 152, 253)
 position = Vector2(26, 18.25)
 shape = SubResource("RectangleShape2D_wno3q")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="InteractArea" type="Area2D" parent="."]
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
+[node name="InteractArea" type="CollisionShape2D" parent="InteractArea"]
 position = Vector2(24, 15)
 shape = SubResource("CircleShape2D_eokcd")
 
@@ -34,5 +34,5 @@ offset_top = -426.0
 offset_right = 129.0
 offset_bottom = -386.0
 
-[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
-[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]
+[connection signal="body_entered" from="InteractArea" to="." method="_on_interact_area_body_entered"]
+[connection signal="body_exited" from="InteractArea" to="." method="_on_interact_area_body_exited"]
